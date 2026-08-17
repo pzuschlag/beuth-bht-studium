@@ -1,9 +1,8 @@
 # Beuth / BHT Studium — Archivierte Kursarbeiten
 
-Archivierte Studienleistungen aus dem Bachelorstudium **Wirtschaftsinformatik** an der
+Archivierte Studienleistungen aus dem Bachelorstudium **Medieninformatik** an der
 **Beuth Hochschule für Technik Berlin** (seit 2022: **Berliner Hochschule für Technik, BHT**),
-2015–2019. Zusammengeführt aus mehreren Einzel-Repos, damit Studierende mit ähnlichen Aufgaben
-sie an einem Ort finden.
+2015–2019. Zusammengeführt aus mehreren Einzel-Repos.
 
 **Kein Musterlösungs-Anspruch.** Die Aufgabenstellungen haben sich seither geändert, der Code
 ist auf dem Stand von 2016–2019. Verstehen vor Kopieren.
