@@ -1,0 +1,61 @@
+/*Legen Sie ein HTML-Dokument wie folgt an:*/
+
+/*Verlinkungen zu den Textabsätzen unten*/
+
+Galerie
+rot
+blau
+lila
+pink
+gelb
+bunt
+
+/*Die Anordnung der Bilder und auch die Größe ist im Moment nebensächlich.*/
+
+Galerie
+poppy.jpg
+rose1.jpg
+kornblume.jpg
+anemone.jpg
+cosmee.jpg
+krokos.jpg
+lilac.jpg
+aster.jpg
+gerbera.png
+rose2.jpg
+seeanemone.jpg
+colorful.jpg
+
+/*Ein einführender Absatz:*/
+
+Alles über Blumenfarben!
+Blumengruß
+Der Strauß, den ich gepflücket,
+Grüße dich vieltausendmal!
+Ich habe mich oft gebücket,
+Ach, wohl eintausendmal,
+Und ihn ans Herz gedrücket
+Wie hunderttausendmal!
+Johann Wolfgang von Goethe (1749 - 1832)
+
+/*Hierher soll von oben verlinkt werden:*/
+
+Die Roten
+Zu den roten gehören die Mohnblumen und die Rosen.
+Der Duft der Blumen ist weit süßer in der Luft als in der Hand. Ein Kelch, ein Blatt, ein Dorn
+An irgendeinem Sommermorgen –Ein Schälchen Tau – Bienen, ein oder zwei – Ein Windhauch – Rascheln in den Zweigen – Und ich bin eine Rose!
+
+Die Blauen
+Wenn du vergnügt sein willst, umgib dich mit Freunden, wenn du glücklich sein willst, umgib dich mit Blumen.
+
+Die Lilanen
+Wohl sind die Königinnen der Blumenwelt die, die auf der Höhe des Frühlings blühen, Maiblumen, Jasmin und Rose. Aber auch noch am gefrornen Fenster dem schlanken Wuchs der über dem Wasserglase schwebenden Hyacinthe, dem Krokus, der noch aus dem Schneegefild heraus sein buntes Glockenköpfchen heben muß, zu lauschen, es kann über die Wonnen der Rosenzeit gehen. Erinnerung, Sehnsucht, Hoffnung sind die Begleiter der ersten Frühlingsboten und Sehnsucht beglückt oft mehr als Besitz.
+
+Die Pinken
+Da ist doch irgendwo der Wurm drin: Käme Jesus heute wieder auf die Erde und predigte sein Gleichnis "Sehet die Lilien auf dem Felde ..." – Schmonzens. Keiner würde ihn verstehen. Denn es gibt ja fast keine Lilien mehr auf dem Felde ...
+
+Die Gelben
+Blumen, die wir selten sehen, haben es uns angetan. Wir bewundern Orchideen und verachten Löwenzahn.
+
+Die Bunten
+Blumen müssen nicht schön sein. Sie sind es.
