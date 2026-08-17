@@ -5,7 +5,6 @@ Archivierte Studienleistungen aus dem Bachelorstudium **Medieninformatik** an de
 2015–2019. Zusammengeführt aus mehreren Einzel-Repos.
 
 **Kein Musterlösungs-Anspruch.** Die Aufgabenstellungen haben sich seither geändert, der Code
-ist auf dem Stand von 2016–2019. Verstehen vor Kopieren.
 
 ## Inhalt
 
