@@ -1,0 +1,7 @@
+<!-- Current Karma Points -->
+<div class="row">
+    <div id="points-view" class="col s12" [ngClass]="{rotation: rotate}" (click)="centerMap()">
+        <div id="icon"><i class="fa fa-heart" aria-hidden="true" [style.color]="color"></i></div>
+        <div id="content">{{_karma}}</div>
+    </div>
+</div>

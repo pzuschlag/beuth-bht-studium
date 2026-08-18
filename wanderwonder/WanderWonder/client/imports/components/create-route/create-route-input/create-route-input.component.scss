@@ -1,0 +1,49 @@
+// compileCompressed: ../../../../../public/styles/$1.min.css
+// when using atom package:sass-autocompile it compiles the minified version
+// to the specified path, if using another compiler, the path has to be specified
+// separately
+@import '../../../../scss/variables.scss';
+form {
+    padding-top: 5%;
+    height: 95%;
+}
+.row {
+    height: 100%;
+}
+#input-wrapper {
+    background-color: rgba($primary-color-text, 0.9);
+    padding: 2% 0.75rem;
+}
+.input-field {
+    margin-bottom: 1rem;
+    label {
+        margin-left: 2.2rem;
+    }
+    .prefix {
+        top: 20%;
+        left: 2%;
+        font-size: 1.5rem;
+        color: $accent-color;
+        cursor: pointer;
+    }
+    input {
+        height: 1.5rem !important;
+    }
+    i,
+    label {
+        top: 0 !important;
+    }
+    label.active {
+        top: 0.6rem !important;
+    }
+}
+.address-info {
+    position: relative;
+    top: -1.5rem;
+    margin-left: 3rem;
+    font-size: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: calc(100% - 3rem);
+}

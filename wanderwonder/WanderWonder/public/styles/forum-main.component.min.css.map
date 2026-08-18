@@ -1,0 +1,11 @@
+{
+	"version": 3,
+	"file": "forum-main.component.min.css",
+	"sources": [
+		"../../client/imports/components/forum/forum-main/forum-main.component.scss",
+		"../../client/scss/variables.scss",
+		"../../client/scss/colors.scss"
+	],
+	"mappings": "AAKA,AAAA,GAAG,AAAC,CACA,gBAAgB,CAAE,8IAAG,CACrB,eAAe,CAAE,KAAM,CACvB,mBAAmB,CAAE,MAAO,CAC5B,MAAM,CAAE,KAAM,CACd,KAAK,CAAE,IAAK,CACf,AACD,AAAA,kBAAkB,AAAC,CACf,gBAAgB,CAAE,8IAAG,CACrB,eAAe,CAAE,KAAM,CACvB,mBAAmB,CAAE,CAAE,CAI1B,AAPD,AAII,kBAJc,CAId,EAAE,AAAC,CACC,KAAK,CEVQ,IAAO,CFWvB,AAEL,AAAA,IAAI,AAAC,CACD,UAAU,CAAE,GAAI,CAChB,aAAa,CAAE,CAAE,CACjB,cAAc,CAAE,EAAG,CACnB,QAAQ,CAAE,MAAO,CACjB,GAAG,CAAE,GAAI,CACT,QAAQ,CAAE,QAAS,CACtB,AACD,AAAA,MAAM,AAAC,CACH,QAAQ,CAAE,QAAS,CACnB,GAAG,CAAE,GAAI,CACT,SAAS,CAAE,IAAK,CAChB,KAAK,CAAE,KAAM,CACb,KAAK,CAAE,EAAG,CACb",
+	"names": []
+}

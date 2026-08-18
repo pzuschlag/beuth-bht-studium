@@ -1,0 +1,4 @@
+<google-maps-wrapper (onStationClick)="onStationClick($event)" (onClosestStation)="onClosestStation($event)" [isProvider]="false"></google-maps-wrapper>
+<passenger-confirmation [meetingpoint]="_meetingpoint" [identifier]="_identifier"></passenger-confirmation>
+<passenger-destination *ngIf="_destinationOpen" (onSend)="onSend($event)" (onDecline)="onDecline($event)"></passenger-destination>
+<passenger-search *ngIf="!_destinationOpen"></passenger-search>

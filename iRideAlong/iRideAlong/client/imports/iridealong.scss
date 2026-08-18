@@ -1,0 +1,6 @@
+// compileCompressed: ../../public/styles/$1.min.css
+// when using atom package:sass-autocompile it compiles the minified version
+// to the specified path, if using another compiler, the path has to be specified
+// separately
+// import variables
+@import '../scss/variables.scss';

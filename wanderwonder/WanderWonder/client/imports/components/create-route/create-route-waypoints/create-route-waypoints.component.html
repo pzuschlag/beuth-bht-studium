@@ -1,0 +1,37 @@
+<ul class="collection">
+    <li *ngFor="let point of route.waypoints" class="collection-item">
+        <table class="striped highlight">
+            <tbody>
+                <tr>
+                    <td *ngIf="!point.img">
+                        <i *ngIf="point.field === 'start'" class="fa fa-street-view"></i>
+                        <i *ngIf="point.field === 'waypoint'" class="fa fa-tag"></i>
+                        <i *ngIf="point.field === 'end'" class="fa fa-flag-checkered"></i>
+                    </td>
+                    <td *ngIf="point.img">
+                        <img class="materialboxed" materialize="materialbox" width="60" [src]="'data:image/jpg;charset=utf-8;base64, '+point.img" alt="">
+                    </td>
+                    <td>
+                        <p>{{point.name}}</p>
+                    </td>
+                </tr>
+                <tr *ngIf="point.lat">
+                    <td>Latitude</td>
+                    <td>{{point.lat | trimDecimals: 6}}</td>
+                </tr>
+                <tr *ngIf="point.lng">
+                    <td>Longitude</td>
+                    <td>{{point.lng | trimDecimals: 6}}</td>
+                </tr>
+                <tr *ngIf="point.localTime">
+                    <td>Zeitpunkt</td>
+                    <td>{{point.localTime}}</td>
+                </tr>
+                <tr *ngIf="point.pressure">
+                    <td>Druck</td>
+                    <td>{{point.pressure | trimDecimals: 2}} hpa</td>
+                </tr>
+            </tbody>
+        </table>
+    </li>
+</ul>

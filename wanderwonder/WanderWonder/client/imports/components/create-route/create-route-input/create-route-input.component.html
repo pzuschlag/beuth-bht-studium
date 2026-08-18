@@ -1,0 +1,27 @@
+<form>
+    <div class="row">
+        <div id="input-wrapper" class="col s10 offset-s1">
+            <div class="input-field">
+                <i *ngIf="!address_complete.start" class="fa fa-crosshairs prefix" (click)="getLocation(start.id)"></i>
+                <i *ngIf="address_complete.start" class="fa fa-check-circle-o prefix" (click)="_set(start.id)"></i>
+                <input #start id="start" type="text" class="validate" ngClass="{active: location.start.value}" [ngFormControl]="location.start">
+                <label for="start">Start</label>
+                <p class="address-info">{{address_info.start}}</p>
+            </div>
+            <div class="input-field">
+                <i *ngIf="!address_complete.end" class="fa fa-crosshairs prefix" (click)="getLocation(end.id)"></i>
+                <i *ngIf="address_complete.end" class="fa fa-check-circle-o prefix" (click)="_set(end.id)"></i>
+                <input #end id="end" type="text" class="validate" [ngFormControl]="location.end">
+                <label for="end">Ende</label>
+                <p class="address-info">{{address_info.end}}</p>
+            </div>
+            <div class="input-field">
+                <i *ngIf="!address_complete.waypoint" class="fa fa-crosshairs prefix" (click)="getLocation(waypoint.id)"></i>
+                <i *ngIf="address_complete.waypoint" class="fa fa-plus-circle prefix" (click)="_set(waypoint.id)"></i>
+                <input #waypoint id="waypoint" type="text" class="validate" [ngFormControl]="location.waypoint">
+                <label for="waypoint">Wegpunkt hinzufügen</label>
+                <p class="address-info">{{address_info.waypoint}}</p>
+            </div>
+        </div>
+    </div>
+</form>

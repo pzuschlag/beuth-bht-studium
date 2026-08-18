@@ -1,0 +1,11 @@
+{
+	"version": 3,
+	"file": "geolocation.component.min.css",
+	"sources": [
+		"../../client/imports/components/util/geolocation/geolocation.component.scss",
+		"../../client/scss/variables.scss",
+		"../../client/scss/colors.scss"
+	],
+	"mappings": "",
+	"names": []
+}

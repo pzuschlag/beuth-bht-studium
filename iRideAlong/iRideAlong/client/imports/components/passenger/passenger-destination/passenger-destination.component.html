@@ -1,0 +1,39 @@
+<div class="row" [style.height.rem]="_height">
+    <div id="nav" class="col s12 z-depth-1">
+        <div class="button-wrapper col s2 left-align">
+            <a (click)="back()" class="waves-effect btn-flat">
+                <i *ngIf="!_lineEntered" class="fa fa-times" aria-hidden="true"></i>
+                <i *ngIf="_lineEntered" class="fa fa-caret-left" aria-hidden="true"></i>
+            </a>
+        </div>
+        <form class="col s8" [ngFormModel]="_dirForm">
+            <div class="input-field">
+                <input *ngIf="!_lineEntered" type="text" ngControl="line" required class="validate" materialize="characterCounter" id="line"
+                    length="5" placeholder="e.g. 'U1' od 'S42'">
+                <label *ngIf="!_lineEntered" for="line">
+                    <i class="fa fa-rocket" aria-hidden="true"></i>Enter departing line you wish to use
+                </label>
+                <input *ngIf="_lineEntered" type="text" ngControl="direction" required class="validate" materialize="characterCounter" id="direction"
+                    length="30" placeholder="e.g. 'Mitte' or 'Alexanderplatz'">
+                <label *ngIf="_lineEntered" for="direction">
+                    <i class="fa fa-map-signs" aria-hidden="true"></i>Enter your direction or destination
+                </label>
+                <div *ngIf="(!_dirForm.controls.line.pristine && !_dirForm.controls.line.valid) || (!_dirForm.controls.direction.pristine && !_dirForm.controls.direction.valid)"
+                    id="input-error">
+                    Please check your input
+                </div>
+            </div>
+        </form>
+        <div class="button-wrapper col s2 right-align">
+            <button *ngIf="!_lineEntered" (click)="sendRequest()" class="waves-effect btn-flat" [ngClass]="{'disabled': _dirForm.controls.line.pristine || !_dirForm.controls.line.valid}"
+                [disabled]="_dirForm.controls.line.pristine || !_dirForm.controls.line.valid">
+                <i class="fa fa-check" aria-hidden="true"></i>
+            </button>
+            <button *ngIf="_lineEntered" (click)="sendRequest()" class="waves-effect btn-flat" [ngClass]="{'disabled': _dirForm.controls.direction.pristine || !_dirForm.controls.direction.valid}"
+                [disabled]="_dirForm.controls.direction.pristine || !_dirForm.controls.direction.valid">
+                <i class="fa fa-paper-plane" aria-hidden="true"></i>
+            </button>
+        </div>
+    </div>
+</div>
+<div class="lean-overlay"></div>

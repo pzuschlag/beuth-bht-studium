@@ -1,0 +1,11 @@
+<google-maps [mapTypeId]="_mapTypeId" [disableDefaultUI]="disDefUI" [latitude]="lat" [longitude]="lng" [zoom]="zm" (mapClick)="openInputWindow($event)">
+    <google-maps-marker *ngFor="let point of _path" [point]="point" (dragDone)="set($event)" (markerClick)="remove($event)" [draggable]="!_deactivateControlFunctions" [clickable]="!_deactivateControlFunctions">
+    </google-maps-marker>
+    <google-maps-polyline [id]="0" [path]="_path">
+    </google-maps-polyline>
+</google-maps>
+<div id="input-wrapper" *ngIf="_inputWindow" [style.left.px]="_inputWindow.x" [style.top.px]="_inputWindow.y" [ngStyle]="{'left': _inputWindow.x, 'top': _inputWindow.y}">
+    <a class="btn-floating btn-small waves-effect waves-light red" (click)="addPoint('start', _inputWindow.lat, _inputWindow.lng)"><i class="fa fa-street-view"></i></a>
+    <a class="btn-floating btn-small waves-effect waves-light red" (click)="addPoint('waypoint', _inputWindow.lat, _inputWindow.lng)"><i class="fa fa-tag"></i></a>
+    <a class="btn-floating btn-small waves-effect waves-light red" (click)="addPoint('end', _inputWindow.lat, _inputWindow.lng)"><i class="fa fa-flag-checkered"></i></a>
+</div>

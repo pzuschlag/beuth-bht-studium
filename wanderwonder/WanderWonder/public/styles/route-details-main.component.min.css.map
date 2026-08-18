@@ -1,0 +1,11 @@
+{
+	"version": 3,
+	"file": "route-details-main.component.min.css",
+	"sources": [
+		"../../client/app/components/route-details/route-details-main/route-details-main.component.scss",
+		"../../client/scss/variables.scss",
+		"../../client/scss/colors.scss"
+	],
+	"mappings": "AAKA,AAAA,WAAW,AAAC,CACR,UAAU,CAAE,MAAO,CACnB,cAAc,CAAE,CAAE,CACrB,AACD,AAAA,GAAG,AAAC,CACA,KAAK,CAAE,IAAK,CACZ,MAAM,CAAE,IAAK,CACb,OAAO,CAAE,GAAI,CACb,QAAQ,CAAE,QAAS,CACnB,GAAG,CAAE,KAAM,CACX,OAAO,CAAE,KAAM,CAClB,AACD,AAAA,mBAAmB,AAAC,CAChB,eAAe,CAAE,KAAM,CACvB,MAAM,CAAE,IAAK,CACb,aAAa,CAAE,CAAE,CAIpB,AAPD,AAII,mBAJe,CAIf,IAAI,AAAC,CACD,KAAK,CAAE,KAAM,CAChB,AAEL,AAAA,iBAAiB,AAAC,CACd,MAAM,CAAE,IAAK,CACb,QAAQ,CAAE,QAAS,CACnB,QAAQ,CAAE,MAAO,CACpB,AACD,AAAA,kBAAkB,AAAC,CACf,QAAQ,CAAE,QAAS,CACnB,GAAG,CAAE,CAAE,CACV",
+	"names": []
+}

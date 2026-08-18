@@ -1,0 +1,19 @@
+<div class="row">
+    <div id="nav" class="col s12 z-depth-1">
+        <div class="button-wrapper col s2 left-align">
+            <a (click)="back()" class="waves-effect btn-flat"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+        </div>
+        <form class="col s8">
+            <div class="input-field">
+                <input id="search" type="text" class="validate" [(ngModel)]="_query">
+                <label for="search">Find Station</label>
+                <div *ngFor="let station of _stations | mapToArray | searchArray:3: _query" (click)="setLatLng(station.id) ">
+                    <span>{{station.name}}</span>
+                </div>
+            </div>
+        </form>
+        <div class="button-wrapper col s2 right-align">
+            <a (click)="currentLocation()" class="waves-effect btn-flat"><i class="fa fa-crosshairs" aria-hidden="true"></i></a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,11 @@
+{
+	"version": 3,
+	"file": "passenger-confirmation.component.min.css",
+	"sources": [
+		"../../client/imports/components/passenger/passenger-confirmation/passenger-confirmation.component.scss",
+		"../../client/scss/variables.scss",
+		"../../client/scss/colors.scss"
+	],
+	"mappings": "AAKA,AAAA,MAAM,AAAC,CACH,MAAM,CAAE,GAAI,CACf,AACD,AAAA,QAAQ,AAAC,CACL,UAAU,CAAE,MAAO,CACnB,KAAK,CAAE,IAAK,CACf,AACD,AAAA,cAAc,AAAC,CACX,OAAO,CAAE,WAAY,CACxB,AACD,AAAY,WAAD,CAAC,gBAAgB,AAAC,CACzB,YAAY,CAAE,IAAK,CACnB,aAAa,CAAE,CAAE,CACjB,gBAAgB,CAAE,WAAY,CACjC,AACD,AAAA,WAAW,AAAC,CACR,MAAM,CAAE,CAAE,CACb,AACD,AAAA,UAAU,AAAC,CACP,KAAK,CEXS,OAAO,CFYrB,WAAW,CAAE,IAAK,CACrB",
+	"names": []
+}

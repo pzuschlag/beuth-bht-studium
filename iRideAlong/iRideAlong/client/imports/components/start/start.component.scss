@@ -1,0 +1,30 @@
+// compileCompressed: ../../../../public/styles/$1.min.css
+// when using atom package:sass-autocompile it compiles the minified version
+// to the specified path, if using another compiler, the path has to be specified
+// separately
+@import '../../../scss/variables.scss';
+
+.section {
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#background_top {
+    background-image: url("./images/start_1.jpeg");
+}
+
+#background_bottom {
+    background-image: url("./images/start_2.jpeg");
+}
+
+.button {
+    background-color: rgba(220,221,221,0.8);
+    color: $color-primary-4;
+}
+
+.valign-wrapper {
+    position: relative;
+    top: 45%;
+    display: block;
+}

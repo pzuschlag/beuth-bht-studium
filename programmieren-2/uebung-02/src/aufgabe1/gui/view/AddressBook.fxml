@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="aufgabe1.view.gui.AddressBookController">
+	<center>
+		<TableView fx:id="contactTable" prefHeight="164.0" prefWidth="345.0" BorderPane.alignment="CENTER">
+			<columns>
+				<TableColumn fx:id="lastNameColumn" prefWidth="120.0" text="Nachname" />
+				<TableColumn fx:id="firstNameColumn" minWidth="0.0" prefWidth="120.0" text="Vorname" />
+				<TableColumn fx:id="numberColumn" prefWidth="120.0" text="Nummer" />
+				<TableColumn fx:id="mailColumn" prefWidth="120.0" text="E-Mail" />
+				<TableColumn fx:id="addressColumn" prefWidth="103.0" text="Adresse" />
+			</columns>
+		</TableView>
+	</center>
+	<right>
+		<ScrollBar orientation="VERTICAL" BorderPane.alignment="CENTER" />
+	</right>
+	<bottom>
+		<HBox alignment="CENTER" prefHeight="35.0" prefWidth="600.0" spacing="10.0" style="-fx-padding: 0;" BorderPane.alignment="CENTER">
+			<children>
+				<Button mnemonicParsing="false" onAction="#newContact" prefHeight="26.0" prefWidth="80.0" text="Add">
+               <HBox.margin>
+                  <Insets left="168.0" />
+               </HBox.margin></Button>
+				<Button layoutX="53.0" layoutY="10.0" mnemonicParsing="false" onAction="#changeContact" prefHeight="26.0" prefWidth="80.0" text="Change" />
+				<Button mnemonicParsing="false" onAction="#deleteContact" prefHeight="26.0" prefWidth="80.0" text="Remove">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin></Button>
+            <Label text="Entries:">
+               <HBox.margin>
+                  <Insets left="80.0" />
+               </HBox.margin>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Label>
+            <Label fx:id="noOfEntries" layoutY="15.0" text="0" />
+			</children>
+			<opaqueInsets>
+				<Insets />
+			</opaqueInsets>
+			<BorderPane.margin>
+				<Insets />
+			</BorderPane.margin>
+		</HBox>
+	</bottom>
+	<top>
+		<VBox prefHeight="0.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+			<children>
+				<MenuBar>
+					<menus>
+						<Menu mnemonicParsing="false" text="File">
+							<items>
+								<MenuItem mnemonicParsing="false" text="Close" />
+							</items>
+						</Menu>
+						<Menu mnemonicParsing="false" text="Edit">
+							<items>
+								<MenuItem mnemonicParsing="false" text="Delete" />
+							</items>
+						</Menu>
+						<Menu mnemonicParsing="false" text="Help">
+							<items>
+								<MenuItem mnemonicParsing="false" text="About" />
+							</items>
+						</Menu>
+					</menus>
+				</MenuBar>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label prefHeight="27.0" prefWidth="50.0" text="Suche:" />
+      				<TextField fx:id="searchField" onKeyPressed="#searchContact" prefHeight="26.0" prefWidth="550.0" />
+               </children>
+            </HBox>
+			</children>
+		</VBox>
+	</top>
+</BorderPane>

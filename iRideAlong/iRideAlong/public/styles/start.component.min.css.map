@@ -1,0 +1,11 @@
+{
+	"version": 3,
+	"file": "start.component.min.css",
+	"sources": [
+		"../../client/imports/components/start/start.component.scss",
+		"../../client/scss/variables.scss",
+		"../../client/scss/colors.scss"
+	],
+	"mappings": "AAMA,AAAA,QAAQ,AAAC,CACL,MAAM,CAAE,IAAK,CACb,iBAAiB,CAAE,SAAU,CAC7B,eAAe,CAAE,KAAM,CAC1B,AAED,AAAA,eAAe,AAAC,CACZ,gBAAgB,CAAE,4BAAG,CACxB,AAED,AAAA,kBAAkB,AAAC,CACf,gBAAgB,CAAE,4BAAG,CACxB,AAED,AAAA,OAAO,AAAC,CACJ,gBAAgB,CAAE,qBAAI,CACtB,KAAK,CEPS,OAAO,CFQxB,AAED,AAAA,eAAe,AAAC,CACZ,QAAQ,CAAE,QAAS,CACnB,GAAG,CAAE,GAAI,CACT,OAAO,CAAE,KAAM,CAClB",
+	"names": []
+}

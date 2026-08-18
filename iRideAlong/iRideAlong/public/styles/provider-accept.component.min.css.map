@@ -1,0 +1,11 @@
+{
+	"version": 3,
+	"file": "provider-accept.component.min.css",
+	"sources": [
+		"../../client/imports/components/provider/provider-accept/provider-accept.component.scss",
+		"../../client/scss/variables.scss",
+		"../../client/scss/colors.scss"
+	],
+	"mappings": "AAKA,AAAA,MAAM,AAAC,CACH,MAAM,CAAE,GAAI,CACf,AACD,AAAA,cAAc,AAAC,CACX,OAAO,CAAE,WAAY,CACxB,AACD,AAAC,CAAA,AAAA,OAAO,AAAC,CACL,SAAS,CAAE,KAAM,CACpB,AACD,AAAA,WAAW,AAAC,CACR,aAAa,CAAE,IAAK,CACvB,AACD,AAAA,UAAU,AAAC,CACP,KAAK,CELS,OAAO,CFMxB",
+	"names": []
+}

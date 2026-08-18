@@ -1,0 +1,19 @@
+<ul materialize="collapsible" data-collapsible="expandable">
+    <li *ngFor="let info of routeInfos; let i = index">
+        <div class="collapsible-header" [ngStyle]="{'background-image': 'url(' + info.img + ')'}">
+            <i class="fa" [ngClass]="info.icn"></i>
+            <span>{{info.header}}</span>
+        </div>
+        <div class="collapsible-body">
+            <img [src]="info.img" alt="">
+            <div class="body-text-wrapper">
+                <p class="bodyheader">
+                    {{info.body.header}}
+                </p>
+                <p>
+                    {{info.body.body}}
+                </p>
+            </div>
+        </div>
+    </li>
+</ul>

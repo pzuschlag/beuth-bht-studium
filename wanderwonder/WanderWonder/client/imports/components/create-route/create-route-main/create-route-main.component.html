@@ -1,0 +1,28 @@
+<div id="bg" class="row">
+    <div id="first" class="col s12">
+        <create-route-input></create-route-input>
+    </div>
+    <div id="second" class="col s12">
+        <div class="row">
+            <div class="col s10 offset-s1 first-col">
+                <google-maps-wrapper [hidden]="!mapView"></google-maps-wrapper>
+                <create-route-waypoints [hidden]="mapView"></create-route-waypoints>
+            </div>
+            <div class="col s10 offset-s1 second-col">
+                <ul>
+                    <li>
+                        <file-loader></file-loader>
+                    </li>
+                    <li>
+                        <file-saver></file-saver>
+                    </li>
+                    <li>
+                        <a id="switch-view" class="btn-flat waves-effect"><i class="fa fa-exchange" (click)="switchView()"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<a [routerLink]="['']"><i id="left" class="fa fa-chevron-left"></i></a>
+<a [routerLink]="['/details']"><i id="right" class="fa fa-chevron-right"></i></a>

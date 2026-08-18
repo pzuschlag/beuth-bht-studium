@@ -1,0 +1,5 @@
+<google-maps-wrapper (onStationClick)="onStationClick($event)" (onClosestStation)="onClosestStation($event)"></google-maps-wrapper>
+<provider-accept [line]="_line" [direction]="_direction" (onAccept)="onAccept($event)" (onDecline)="onDecline($event)"></provider-accept>
+<provider-karma></provider-karma>
+<provider-meetingpoint *ngIf="_meetingpointOpen" (onSend)="onSend($event)" (onDecline)="onDecline($event)"></provider-meetingpoint>
+<provider-settings (onDisabled)="onDisabled($event)"></provider-settings>

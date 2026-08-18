@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Control">
+	<top>
+		<MenuBar BorderPane.alignment="CENTER">
+			<menus>
+				<Menu mnemonicParsing="false" text="File">
+					<items>
+						<MenuItem mnemonicParsing="false" text="Close" />
+					</items>
+				</Menu>
+				<Menu mnemonicParsing="false" text="Edit">
+					<items>
+						<MenuItem mnemonicParsing="false" text="Delete" />
+					</items>
+				</Menu>
+				<Menu mnemonicParsing="false" text="Help">
+					<items>
+						<MenuItem mnemonicParsing="false" text="About" />
+					</items>
+				</Menu>
+			</menus>
+		</MenuBar>
+	</top>
+	<center>
+		<HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+			<children>
+				<VBox prefHeight="336.0" prefWidth="131.0">
+					<children>
+						<Pane prefHeight="58.0" prefWidth="131.0">
+                     <children>
+                        <ImageView fitHeight="60.0" fitWidth="130.0" layoutX="22.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../resources/images/unicorn.png" />
+                           </image>
+                        </ImageView>
+                     </children></Pane>
+						<ListView fx:id="contactList" editable="true" prefHeight="280.0" prefWidth="131.0" />
+					</children>
+				</VBox>
+				<TabPane prefHeight="336.0" prefWidth="470.0" tabClosingPolicy="UNAVAILABLE">
+					<tabs>
+						<Tab text="TableView">
+							<content>
+								<TableView fx:id="contactTable" editable="true" prefHeight="303.0" prefWidth="159.0">
+									<columns>
+										<TableColumn fx:id="lastNameColumn" prefWidth="120.0" text="Nachname" />
+										<TableColumn fx:id="firstNameColumn" minWidth="0.0" prefWidth="120.0" text="Vorname" />
+										<TableColumn fx:id="numberColumn" prefWidth="120.0" text="Telefon" />
+										<TableColumn fx:id="addressColumn" prefWidth="108.0" text="Adresse" />
+									</columns>
+								</TableView>
+							</content>
+						</Tab>
+						<Tab text="TreeView">
+							<content>
+								<TreeView fx:id="contactTree" prefHeight="303.0" prefWidth="466.0" />
+							</content>
+						</Tab>
+					</tabs>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+				</TabPane>
+			</children>
+		</HBox>
+	</center>
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="30.0" prefWidth="600.0" spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btn_newEntry" mnemonicParsing="false" onAction="#newEntry" text="Neuer Eintrag" />
+            <Button fx:id="btn_deleteEntry" mnemonicParsing="false" onAction="#deleteEntry" text="Eintrag Löschen" />
+            <Button fx:id="btn_print" mnemonicParsing="false" onAction="#print" text="Drucken" textAlignment="CENTER" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="7.0" />
+               </BorderPane.margin>
+            </Button>
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>

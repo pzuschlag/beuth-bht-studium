@@ -1,0 +1,11 @@
+{
+	"version": 3,
+	"file": "record-route.component.min.css",
+	"sources": [
+		"../../client/imports/components/start/record-route/record-route.component.scss",
+		"../../client/scss/variables.scss",
+		"../../client/scss/colors.scss"
+	],
+	"mappings": "AAMA,AAAA,aAAa,AAAC,CACV,gBAAgB,CECL,OAAO,CFArB,AACD,AAAA,YAAY,AAAC,CACT,MAAM,CAAE,GAAI,CACf,AACD,AAAA,IAAI,AAAC,CACD,aAAa,CAAE,CAAE,CACpB",
+	"names": []
+}

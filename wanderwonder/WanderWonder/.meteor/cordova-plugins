@@ -1,0 +1,8 @@
+com.phonegap.plugins.cordova-plugin-barometer@https://github.com/olton/cordova-plugin-barometer.git#d76e472c1c61315c3df5dd5bb5d6dc910a8b08ee
+cordova-filepath-resolver@https://github.com/gjoris/cordova-filepath-resolver.git#d9da49bf46a5ff07f98fba36de01eda6c4d2fb34
+cordova-plugin-camera@2.2.0
+cordova-plugin-compat@1.0.0
+cordova-plugin-console@1.0.3
+cordova-plugin-file@https://github.com/apache/cordova-plugin-file.git#a309a3d53be278efe8253b84af84a3b5ee38fc20
+cordova-plugin-geolocation@https://github.com/apache/cordova-plugin-geolocation.git#006523732616ff94b03853d2580cf0e15263c778
+cordova-plugin-mauron85-background-geolocation@https://github.com/mauron85/cordova-plugin-background-geolocation.git#8b102424740e2a31e044a7678157753719e7d716

@@ -1,0 +1,11 @@
+{
+	"version": 3,
+	"file": "passenger-main.component.min.css",
+	"sources": [
+		"../../client/imports/components/passenger/passenger-main/passenger-main.component.scss",
+		"../../client/scss/variables.scss",
+		"../../client/scss/colors.scss"
+	],
+	"mappings": "",
+	"names": []
+}

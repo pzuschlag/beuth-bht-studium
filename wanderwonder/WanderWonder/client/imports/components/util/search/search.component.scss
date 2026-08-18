@@ -1,0 +1,36 @@
+// compileCompressed: ../../../../../public/styles/$1.min.css
+// when using atom package:sass-autocompile it compiles the minified version
+// to the specified path, if using another compiler, the path has to be specified
+// separately
+@import '../../../../scss/variables.scss';
+:host {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+.s10 {
+    position: relative;
+}
+input[type=text] {
+    background-color: $primary-color-text;
+    border-bottom: 0;
+    margin-top: 5%;
+    margin-bottom: 0;
+    padding-left: 15%;
+    width: 85%;
+}
+i {
+    position: absolute;
+    top: 50%;
+    left: 7%;
+    cursor: pointer;
+}
+.result-wrapper {
+    background-color: rgba($divider-color, 0.3);
+    a {
+        color: $primary-color-text;
+        padding: 2.5% 5%;
+        display: block;
+    }
+}

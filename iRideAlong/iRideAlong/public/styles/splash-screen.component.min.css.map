@@ -1,0 +1,11 @@
+{
+	"version": 3,
+	"file": "splash-screen.component.min.css",
+	"sources": [
+		"../../client/app/components/splash-screen/splash-screen.component.scss",
+		"../../client/scss/variables.scss",
+		"../../client/scss/colors.scss"
+	],
+	"mappings": "",
+	"names": []
+}

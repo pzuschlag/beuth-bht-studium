@@ -1,0 +1,54 @@
+// compileCompressed: ../../public/styles/$1.min.css
+// when using atom package:sass-autocompile it compiles the minified version
+// to the specified path, if using another compiler, the path has to be specified
+// separately
+// import variables
+@import './imports.scss';
+@import '../scss/variables.scss';
+body,
+html {
+    padding: 0;
+    margin: 0;
+}
+.lean-overlay {
+    z-index: 997 !important;
+}
+.footnote {
+    font-size: 10px;
+    color: $primary-color-light;
+}
+// OVERWRITE MATERIALIZE COLOR SETTINGS
+.collection {
+    .collection-item {
+        .secondary-content {
+            color: rgba($accent-color, 0.7);
+        }
+    }
+}
+/* label color */
+label {
+    // color: $accent-color !important;
+}
+/* label focus color */
+input:focus + label {
+    color: $accent-color !important;
+}
+/* label underline focus color */
+input:focus {
+    border-bottom: 1px solid $accent-color !important;
+    box-shadow: 0 1px 0 0 $accent-color !important;
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+    color: $accent-color !important;
+}
+// /* valid color */
+// .input-field input.valid {
+//     border-bottom: 1px solid #000;
+//     box-shadow: 0 1px 0 0 #000;
+// }
+// /* invalid color */
+// .input-field input.invalid {
+//     border-bottom: 1px solid #000;
+//     box-shadow: 0 1px 0 0 #000;
+// }

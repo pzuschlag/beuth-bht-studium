@@ -1,0 +1,33 @@
+// compileCompressed: ../../../../../public/styles/$1.min.css
+// when using atom package:sass-autocompile it compiles the minified version
+// to the specified path, if using another compiler, the path has to be specified
+// separately
+@import '../../../../scss/variables.scss'; //  encapsulate all css rules to be valid only in the component (emu. shadow-dom)
+//  use global.scss for global rules
+.row {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+}
+form {
+    padding-bottom: 0.2em;
+}
+.col {
+    padding: 0 0.25rem;
+}
+#nav {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding-top: 0.5rem;
+}
+.button-wrapper {
+    margin-top: 1.5rem;
+}
+.btn-flat {
+    padding: 0 1rem;
+}
+.input-field {
+    label {
+        left: 0;
+    }
+}

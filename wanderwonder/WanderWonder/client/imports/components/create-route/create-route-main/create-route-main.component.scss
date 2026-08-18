@@ -1,0 +1,55 @@
+// compileCompressed: ../../../../../public/styles/$1.min.css
+// when using atom package:sass-autocompile it compiles the minified version
+// to the specified path, if using another compiler, the path has to be specified
+// separately
+@import '../../../../scss/variables.scss';
+#bg {
+    background-image: url('https://images.unsplash.com/photo-1433277587075-787d4b98b4ce?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=91d3e2517b8580c345ab2141b0da3c1c');
+    background-size: cover;
+    margin-bottom: 0;
+    height: 100%;
+}
+#first {
+    height: 40%;
+}
+#second {
+    height: 60%;
+    .row {
+        height: 100%;
+        margin-bottom: 0;
+    }
+    .first-col {
+        background-color: rgba($primary-color-text, 0.9);
+        height: 85%;
+        overflow: scroll;
+        padding: 0;
+    }
+    .second-col {
+        background-color: rgba($primary-color-text, 0.9);
+        height: 10%;
+        padding: 0;
+    }
+}
+li,
+ul {
+    display: inline;
+}
+#switch-view {
+    i {
+        font-size: 1.4rem;
+    }
+    float: right;
+}
+#left,
+#right {
+    position: absolute;
+    top: 50%;
+    font-size: 2rem;
+    color: white;
+}
+#left {
+    left: 2%;
+}
+#right {
+    right: 2%;
+}

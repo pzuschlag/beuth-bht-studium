@@ -1,0 +1,6 @@
+20.04.16 - 10:20 - PZ - Server erfolgreich aufgesetzt !
+27.04.16 - 22:40 - PZ - Jira auf der Instanz installiert (als root)
+30.04.16 - 12:15 - PZ - Beim User .bash_profile Einträge für Alias und Color hinzugefügt. Macht Navigieren einfacher.
+01.06.16 - 12:40 - PZ - Einrichtung von REDIS Server (vorbedingung: build-essentials installiert)
+30.06.16 - 19:00 - PZ - Als Server läuft nun NGINX unter /var/www/iridealong findet sich das meteor server bundle mit README
+15.07.16 - 12:00 - PZ - forever installiert (mit "forever list" lassen sich die laufenden prozesse anzeigen, hier findet man auch den pfad zum meteor server log etc.) Der ausführende user heißt iridealong. Über "sudo -u iridealong -H bash -l" kann man sich mit diesem einloggen.

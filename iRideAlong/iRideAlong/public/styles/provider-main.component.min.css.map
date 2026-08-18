@@ -1,0 +1,11 @@
+{
+	"version": 3,
+	"file": "provider-main.component.min.css",
+	"sources": [
+		"../../client/imports/components/provider/provider-main/provider-main.component.scss",
+		"../../client/scss/variables.scss",
+		"../../client/scss/colors.scss"
+	],
+	"mappings": "AAKA,AAAA,IAAI,AAAA,CACF,QAAQ,CAAE,QAAS,CACnB,MAAM,CAAE,IAAK,CACd",
+	"names": []
+}

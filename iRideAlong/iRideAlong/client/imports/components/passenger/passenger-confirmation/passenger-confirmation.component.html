@@ -1,0 +1,31 @@
+<!-- Modal Trigger - DEBUGGING ONLY -->
+<!-- <a materialize="leanModal" [materializeParams]="[{}]" class="waves-effect waves-light btn modal-trigger" href="#passenger-confirmation">Confirm Modal</a> -->
+
+<!-- Modal Structure -->
+<!-- CHANGED: habe hier wieder einen fixed footer hinzugefügt, weil das der Close Button dann immer angezeigt wird und nicht scrollbar ist -->
+<div id="passenger-confirmation" class="modal modal-fixed-footer">
+    <div class="modal-content">
+        <h4>Request confirmed</h4>
+        <table class="bordered">
+            <tbody>
+                <tr>
+                    <td>Go to</td>
+                    <td><span class="highlight">{{meetingpoint}}</span></td>
+                </tr>
+                <tr>
+                    <td>Look for</td>
+                    <td><span class="highlight">{{identifier}}</span></td>
+                </tr>
+            </tbody>
+        </table>
+        <ul class="collection">
+            <li class="collection-item">
+                <span class="lighter">Have fun travelling!!</span>
+                <a class="secondary-content"><i class="fa fa-hand-peace-o fa-2x" aria-hidden="true"></i></a>
+            </li>
+        </ul>
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class=" modal-action modal-close waves-effect btn-flat"><i class="fa fa-check" aria-hidden="true"></i></a>
+    </div>
+</div>
