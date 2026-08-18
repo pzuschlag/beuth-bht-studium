@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "wanderwonder.min.css",
+	"sources": [
+		"../../client/imports/wanderwonder.scss"
+	],
+	"mappings": "",
+	"names": []
+}

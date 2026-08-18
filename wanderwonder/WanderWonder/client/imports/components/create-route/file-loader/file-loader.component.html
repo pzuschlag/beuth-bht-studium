@@ -1,0 +1,33 @@
+<!--MODAL TRIGGER-->
+<a class="btn-flat modal-trigger" materialize="leanModal" href="#fileLoader"><i class="fa fa-folder-open"></i></a>
+<!--MODAL CONTENT-->
+<div id="fileLoader" class="modal modal-fixed-footer">
+    <div class="modal-content">
+        <form>
+            <div class="row">
+                <h5>Route laden</h5>
+                <div class="input-field col s12">
+                    <span id="file">aus Datei öffnen<i class="circle fa fa-file" (click)="loadFile()"></i></span>
+                </div>
+                <div class="input-field col s12">
+                    <input id="search" type="text" class="validate" [ngFormControl]="_search">
+                    <label for="search">in Datenbank suchen</label>
+                </div>
+                <div id="result-wrapper" class="input-field col s12">
+                    <ul class="collection">
+                        <li *ngFor="let result of _results; let i = index" class="collection-item avatar dismissable">
+                            <i class="circle fa fa-external-link" (click)="setRoute(i)"></i>
+                            <span class="title">{{result._name}}</span>
+                            <p>{{result._desc}}
+                                <br><span *ngIf="result._author">Author | {{result._author}}</span>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect btn-flat">abbrechen</a>
+    </div>
+</div>

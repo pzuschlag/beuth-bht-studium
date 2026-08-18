@@ -1,0 +1,25 @@
+// compileCompressed: ../../../../../public/styles/$1.min.css
+// when using atom package:sass-autocompile it compiles the minified version
+// to the specified path, if using another compiler, the path has to be specified
+// separately
+@import '../../../../scss/variables.scss';
+
+.modal.modal-fixed-footer {
+    height: 45%;
+}
+
+.modal-content {
+    padding: 24px 24px 0;
+}
+
+i.bigger {
+    font-size: 1.5em;
+}
+
+#btn-accept {
+    padding-right: 1rem;
+}
+
+.highlight {
+    color: $color-primary-2;
+}

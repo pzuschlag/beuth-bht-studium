@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Telefonserver</title>
+</head>
+<body style="background-color: green;">
+	<h2 align=center>Telefonverzeichnis</h2>
+	<h3 align=center>Sie können nach Name oder nach Telefonnummer oder nach beiden (nebenläufig) suchen.</h3>
+	<form method=get action="http://localhost:9865">
+		<div style=" background-color: rgba(88, 88, 88, .6); padding: 10px; border-radius: 8px; width: 300px; height: 70px; margin: 30px auto;">
+			<table>
+				<tr>
+					<td valign=top>Name:</td>
+					<td><input name=A></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td valign=top>Nummer:</td>
+					<td><input name=B></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td valign=top><input type=submit name=C value=Suchen></td>
+					<td><input type=reset></td>
+					<td><input type=submit name=C value="Server beenden"></td>
+				</tr>
+			</table>
+		</div>
+	</form>
+	<table></table>
+</body>
+</html>

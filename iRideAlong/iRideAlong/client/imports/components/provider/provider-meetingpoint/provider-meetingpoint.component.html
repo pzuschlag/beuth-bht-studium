@@ -1,0 +1,39 @@
+<div class="row" [style.height.rem]="_height">
+    <div id="nav" class="col s12 z-depth-1">
+        <div class="button-wrapper col s2 left-align">
+            <a (click)="back()" class="waves-effect btn-flat">
+                <i *ngIf="!_mpEntered" class="fa fa-times" aria-hidden="true"></i>
+                <i *ngIf="_mpEntered" class="fa fa-caret-left" aria-hidden="true"></i>
+            </a>
+        </div>
+        <form class="col s8" [ngFormModel]="_mpForm">
+            <div class="input-field">
+                <input *ngIf="!_mpEntered" type="text" ngControl="meetingpoint" required class="validate" materialize="characterCounter"
+                    id="meetingpoint" length="120" placeholder="e.g. 'Station entrance' or 'ticket counter'">
+                <label *ngIf="!_mpEntered" for="meetingpoint">
+                    <i class="fa fa-rocket" aria-hidden="true"></i>Enter an easy to find meeting point
+                </label>
+                <input *ngIf="_mpEntered" type="text" ngControl="identifier" required class="validate" materialize="characterCounter" id="identifier"
+                    length="120" placeholder="e.g. 'black hat' or 'will raise my hand'">
+                <label *ngIf="_mpEntered" for="identifier">
+                    <i class="fa fa-hand-spock-o" aria-hidden="true"></i>Enter your most prominent feature
+                </label>
+                <div *ngIf="(!_mpForm.controls.meetingpoint.pristine && !_mpForm.controls.meetingpoint.valid) || (!_mpForm.controls.identifier.pristine && !_mpForm.controls.identifier.valid)"
+                    id="input-error">
+                    Please check your input
+                </div>
+            </div>
+        </form>
+        <div class="button-wrapper col s2 right-align">
+            <button *ngIf="!_mpEntered" (click)="sendConfirmation()" class="waves-effect btn-flat" [ngClass]="{'disabled': _mpForm.controls.meetingpoint.pristine || !_mpForm.controls.meetingpoint.valid}"
+                [disabled]="_mpForm.controls.meetingpoint.pristine || !_mpForm.controls.meetingpoint.valid">
+                <i class="fa fa-check" aria-hidden="true"></i>
+            </button>
+            <button *ngIf="_mpEntered" (click)="sendConfirmation()" class="waves-effect btn-flat" [ngClass]="{'disabled': _mpForm.controls.identifier.pristine || !_mpForm.controls.identifier.valid}"
+                [disabled]="_mpForm.controls.identifier.pristine || !_mpForm.controls.identifier.valid">
+                <i class="fa fa-paper-plane" aria-hidden="true"></i>
+            </button>
+        </div>
+    </div>
+</div>
+<div class="lean-overlay"></div>

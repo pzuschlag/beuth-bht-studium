@@ -1,0 +1,19 @@
+{
+  "name": "uebung2",
+  "version": "1.0.0",
+  "description": "Processing of the second exercise sheet.",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.14.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://zuschy@bitbucket.org/mme2/multimedia-engineering-2.git"
+  },
+  "author": "wookies",
+  "license": "ISC"
+}

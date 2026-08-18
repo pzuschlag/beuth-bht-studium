@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Control">
+	<top>
+		<MenuBar BorderPane.alignment="CENTER">
+			<menus>
+				<Menu mnemonicParsing="false" text="File">
+					<items>
+						<MenuItem mnemonicParsing="false" text="Close" />
+					</items>
+				</Menu>
+				<Menu mnemonicParsing="false" text="Edit">
+					<items>
+						<MenuItem mnemonicParsing="false" text="Delete" />
+					</items>
+				</Menu>
+				<Menu mnemonicParsing="false" text="Help">
+					<items>
+						<MenuItem mnemonicParsing="false" text="About" />
+					</items>
+				</Menu>
+			</menus>
+		</MenuBar>
+	</top>
+	<center>
+      <VBox>
+         <children>
+						<Pane prefHeight="58.0" prefWidth="131.0">
+               <children>
+                  <ImageView fitHeight="60.0" fitWidth="130.0" layoutX="259.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../resources/images/unicorn.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+								<TableView fx:id="tableView" editable="true" prefHeight="281.0" prefWidth="600.0">
+									<columns>
+										<TableColumn fx:id="col_designation" prefWidth="156.0" text="Terminbezeichnung" />
+										<TableColumn fx:id="col_description" minWidth="0.0" prefWidth="146.0" text="Terminbeschreibung" />
+										<TableColumn fx:id="col_date" prefWidth="106.0" text="Datum" />
+										<TableColumn fx:id="col_place" prefWidth="188.0" text="Ort" />
+									</columns>
+								</TableView>
+         </children>
+      </VBox>
+	</center>
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="30.0" prefWidth="600.0" spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btn_newEntry" mnemonicParsing="false" onAction="#newEntry" text="Neuer Eintrag" />
+            <Button fx:id="btn_deleteEntry" mnemonicParsing="false" onAction="#deleteEntry" text="Eintrag Löschen" />
+            <Button fx:id="btn_print" mnemonicParsing="false" onAction="#printEntry" text="Drucken" textAlignment="CENTER" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="7.0" />
+               </BorderPane.margin>
+            </Button>
+            <Button fx:id="btn_write" mnemonicParsing="false" onAction="#writeEntry" text="Write" />
+            <Button fx:id="btn_read" mnemonicParsing="false" onAction="#readEntry" text="Read" />
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>

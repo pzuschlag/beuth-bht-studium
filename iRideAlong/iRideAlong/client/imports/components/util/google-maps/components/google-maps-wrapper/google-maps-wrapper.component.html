@@ -1,0 +1,5 @@
+<google-maps *ngIf="_lat && _lng" [disableDefaultUI]="_disDefUI" [latitude]="_lat" [longitude]="_lng" [(zoom)]="_zm" [zoomControl]="_zoomControl" (boundsChange)="onBoundsChange($event)">
+    <google-maps-circle *ngFor="let station of _filteredStations | mapToArray" [latitude]="station.lat" [longitude]="station.lng" [strokeOpacity]="'0'" [fillColor]="station.active ? '#00ee88' : '#0000b3'"
+        (circleClick)="openDestination(station)" [radius]="station.radius"></google-maps-circle>
+    <google-maps-marker [latitude]="_lastLat" [longitude]="_lastLng" [icon]="{'name': 'MAP_MARKER'}"></google-maps-marker>
+</google-maps>

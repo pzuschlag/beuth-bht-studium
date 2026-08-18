@@ -1,0 +1,11 @@
+{
+	"version": 3,
+	"file": "google-maps-wrapper.component.min.css",
+	"sources": [
+		"../../client/imports/components/util/google-maps/components/google-maps-wrapper/google-maps-wrapper.component.scss",
+		"../../client/scss/variables.scss",
+		"../../client/scss/colors.scss"
+	],
+	"mappings": "AAKA,AAAA,WAAW,AAAC,CACR,MAAM,CAAE,IAAK,CAChB",
+	"names": []
+}

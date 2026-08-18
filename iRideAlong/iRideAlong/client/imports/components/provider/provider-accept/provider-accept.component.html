@@ -1,0 +1,20 @@
+<!-- Modal Trigger -->
+<!-- <a materialize="leanModal" [materializeParams]="[{dismissible: false, opacity: 0.5}]" class="waves-effect waves-light btn modal-trigger"
+    href="#provider-accept">Accept Modal</a> -->
+
+<!-- Modal Structure -->
+<div id="provider-accept" class="modal modal-fixed-footer">
+    <div class="modal-content">
+        <h4><i class="fa fa-inbox" aria-hidden="true"></i> Confirm request</h4>
+        <p>
+            You have received a request for a ride with line <span class="highlight">{{line}}</span> in direction <span class="highlight">{{direction}}</span>.
+        </p>
+        <p>
+            Please accept or decline.
+        </p>
+    </div>
+    <div class="modal-footer">
+        <a (click)="onDecline.emit(true)" href="#!" id="btn-decline" class="modal-action modal-close waves-effect waves-red btn-flat"><i class="fa fa-times fa-2x bigger" aria-hidden="true"></i></a>
+        <a (click)="openMeetingpointModal()" id="btn-accept" class="modal-action modal-close waves-effect waves-green btn-flat"><i class="fa fa-check fa-2x bigger" aria-hidden="true"></i></a>
+    </div>
+</div>

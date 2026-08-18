@@ -1,0 +1,25 @@
+<!--MODAL TRIGGER-->
+<a class="btn-floating modal-trigger waves-effect" materialize="leanModal" href="#recordRoute">
+    <i *ngIf="!_recording" class="fa fa-play"></i>
+    <i *ngIf="_recording" class="fa fa-stop"></i>
+</a>
+<!--MODAL CONTENT-->
+<div id="recordRoute" class="modal bottom-sheet">
+    <div class="modal-content">
+        <h5>Route aufzeichnen</h5>
+        <span>Alle {{interval.value}} Sekunden</span>
+        <form>
+            <div class="row">
+                <div class="input-field col s8">
+                    <p class="range-field">
+                        <input #interval [disabled]="_recording" type="range" id="interval" min="1" max="240" [(ngModel)]="_interval" />
+                    </p>
+                </div>
+                <div class="input-field col s4">
+                    <a *ngIf="_recording" href="#!" class=" modal-action modal-close waves-effect btn-flat" (click)="stopTracking()">Stop</a>
+                    <a *ngIf="!_recording" href="#!" class=" modal-action modal-close waves-effect btn-flat" (click)="startTracking()">Start</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

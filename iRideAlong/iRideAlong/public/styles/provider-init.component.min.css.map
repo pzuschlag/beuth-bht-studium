@@ -1,0 +1,11 @@
+{
+	"version": 3,
+	"file": "provider-init.component.min.css",
+	"sources": [
+		"../../client/app/components/provider/provider-init/provider-init.component.scss",
+		"../../client/scss/variables.scss",
+		"../../client/scss/colors.scss"
+	],
+	"mappings": "",
+	"names": []
+}

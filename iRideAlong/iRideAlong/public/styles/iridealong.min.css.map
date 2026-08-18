@@ -1,0 +1,11 @@
+{
+	"version": 3,
+	"file": "iridealong.min.css",
+	"sources": [
+		"../../client/imports/iridealong.scss",
+		"../../client/scss/variables.scss",
+		"../../client/scss/colors.scss"
+	],
+	"mappings": "",
+	"names": []
+}

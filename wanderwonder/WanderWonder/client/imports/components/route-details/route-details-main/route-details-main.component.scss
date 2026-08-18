@@ -1,0 +1,34 @@
+// compileCompressed: ../../../../../public/styles/$1.min.css
+// when using atom package:sass-autocompile it compiles the minified version
+// to the specified path, if using another compiler, the path has to be specified
+// separately
+@import '../../../../scss/variables.scss';
+.bodyheader {
+    font-style: italic;
+    padding-bottom: 0;
+}
+img {
+    width: 100%;
+    height: 160%;
+    opacity: 0.3;
+    position: relative;
+    top: -7rem;
+    z-index: -9999;
+}
+.collapsible-header {
+    background-size: cover;
+    height: 7rem;
+    border-bottom: 0;
+    span {
+        float: right;
+    }
+}
+.collapsible-body {
+    height: 25vh;
+    position: relative;
+    overflow: hidden;
+}
+.body-text-wrapper {
+    position: absolute;
+    top: 0;
+}

@@ -1,0 +1,3 @@
+:host(.active-wrapper){position:absolute;top:0;width:100%;height:100%}#loading-wrapper{position:absolute;z-index:1000;width:100%;height:100%;text-align:center;background:rgba(255,255,255,0.7)}#loading-wrapper #notice{position:relative;top:44%}#loading-wrapper #notice p{text-transform:uppercase}#loading-wrapper .preloader-wrapper{position:absolute;top:34%;left:calc(50% - 32px)}
+
+/*# sourceMappingURL=preloader.component.min.css.map */

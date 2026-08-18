@@ -1,0 +1,3 @@
+all files and folders in public are copied in dist and made available through meteor
+--> static files, such as images, that are served directly
+--> styles subdirectory keeps all compiled css (&map) files

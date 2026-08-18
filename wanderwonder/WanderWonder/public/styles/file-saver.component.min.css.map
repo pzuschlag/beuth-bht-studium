@@ -1,0 +1,11 @@
+{
+	"version": 3,
+	"file": "file-saver.component.min.css",
+	"sources": [
+		"../../client/imports/components/create-route/file-saver/file-saver.component.scss",
+		"../../client/scss/variables.scss",
+		"../../client/scss/colors.scss"
+	],
+	"mappings": "AAMA,AAAA,aAAa,AAAC,CACV,gBAAgB,CECL,OAAO,CFGrB,AALD,AAEI,aAFS,CAET,CAAC,AAAC,CACE,SAAS,CAAE,MAAO,CACrB",
+	"names": []
+}

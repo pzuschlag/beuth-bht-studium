@@ -1,0 +1,11 @@
+{
+	"version": 3,
+	"file": "start-user.component.min.css",
+	"sources": [
+		"../../client/imports/components/start/start-user/start-user.component.scss",
+		"../../client/scss/variables.scss",
+		"../../client/scss/colors.scss"
+	],
+	"mappings": "AAQA,AAAA,aAAa,AAAC,CACV,gBAAgB,CEDL,OAAO,CFErB,AACD,AAAA,KAAK,AAAC,CACF,UAAU,CAAE,IAAK,CACpB",
+	"names": []
+}

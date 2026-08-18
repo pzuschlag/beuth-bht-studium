@@ -1,0 +1,11 @@
+{
+	"version": 3,
+	"file": "preloader.component.min.css",
+	"sources": [
+		"../../client/imports/components/util/preloader/preloader.component.scss",
+		"../../client/scss/variables.scss",
+		"../../client/scss/colors.scss"
+	],
+	"mappings": "AAKA,AAAqB,KAAf,CAAA,AAAA,eAAe,CAAE,CACnB,QAAQ,CAAE,QAAS,CACnB,GAAG,CAAE,CAAE,CAEP,KAAK,CAAE,IAAK,CACZ,MAAM,CAAE,IAAK,CAChB,AACD,AAAA,gBAAgB,AAAC,CACb,QAAQ,CAAE,QAAS,CACnB,OAAO,CAAE,IAAK,CAEd,KAAK,CAAE,IAAK,CACZ,MAAM,CAAE,IAAK,CAEb,UAAU,CAAE,MAAO,CAEnB,UAAU,CAAE,qBAAI,CAanB,AAtBD,AAUI,gBAVY,CAUZ,OAAO,AAAC,CACJ,QAAQ,CAAE,QAAS,CACnB,GAAG,CAAE,GAAI,CAIZ,AAhBL,AAaQ,gBAbQ,CAUZ,OAAO,CAGH,CAAC,AAAC,CACE,cAAc,CAAE,SAAU,CAC7B,AAfT,AAiBI,gBAjBY,CAiBZ,kBAAkB,AAAC,CACf,QAAQ,CAAE,QAAS,CACnB,GAAG,CAAE,GAAI,CACT,IAAI,CAAE,gBAAI,CACb",
+	"names": []
+}
