@@ -1,0 +1,218 @@
+/*
+Einheiten und Farben:
+Alle Farben legen Sie bitte mit der Funktion hsla() oder rgba() an.
+Verwenden Sie nur relative Einheiten, außer für:
+padding, Grundgrößen Schrift, maximale oder minimale Größen.
+*/
+
+/*Erklären Sie kurz, was die Eigenschaft box-sizing bewirkt. Auf welche anderen properties hat es eine Auswirkung?*/
+/*
+Die Eigenschaft box-sizing wird verwendet, um das Standard CSS Boxmodell zu verändern.
+Das Boxmodell wird dazu verwendet um Breiten und Höhen von Elementen zu berechnen.
+Werte:  * content-box
+        > Dies ist der Default-Wert. Die Eigenschaften Breite und Höhe ergben sich hierbei allein aus den Angaben des
+          Elements, border, margin und padding werden hierbei nicht berücksichtigt.
+          
+        * border-box
+        > Die Angaben für Höhe und Breite berücksichtigen hierbei auch die Werte für padding und border, die Angaben
+          für margin haben weiterhin keine Auswirkungen.
+*/
+
+/*Verwenden Sie den Wert border-box für box-sizing.*/
+* {
+    box-sizing: border-box;
+}
+
+/*reset*/
+* {
+    margin: 0;
+    padding: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+}
+
+/*
+Arrangieren Sie die Links nebeneinander über die Eigenschaft display: block|inline|inline-block
+Nehmen Sie für jedes <li> die größtmögliche Breite ein und verteilen Sie sie gleichmäßig über die gesamte Breite.
+Geben Sie eine Hintergrundfarbe für die <li> und runden Sie die rechte obere Ecke leicht ab.
+*/
+ul {
+    text-align:center;
+    list-style: none;
+}
+
+li:not(:first-child)  {
+    display: inline-block;
+    background-color: rgba(255, 127, 80);
+    border-radius: 0 20px 0 0;
+    width: 16%;
+    margin: 20px 0;
+    padding: 10px;
+}
+
+/*
+Legen Sie dasselbe Arrangement für die <li> fest, diesmal mit der Eigenschaft float.
+*/
+/* ul {
+    text-align: center;
+}
+
+li:not(:first-child)  {
+    float: left;
+    background-color: rgba(255, 127, 80);
+    border-radius: 0 20px 0 0;
+    width: 16%;
+    margin: 20px 2px;
+    padding: 10px;
+    list-style: none;
+}
+
+main {
+    clear: both;
+} */
+
+/*
+<img> sind inline-Elemente. Grundsätzlich können inline-Elemente keine Größenangaben annehmen.
+Warum geht das bei <img> aber doch? */
+/*
+Bei img handet es sich um eine sogenanntes "replaced inline element". Im Grunde ist es beides, bzw. genauer ist es ein
+"inline block" Element. Das bedeutet, dass es sich zwar inline wie Text verhält, aber trotzdem eine Breite und Höhe wie
+ein Blockelemente hat. In CSS besteht die Möglichkeit ein anzuzeigendes Element die Eigenschaft "Inline-Block" zu geben,
+um das Verhalten von Bildern zu replizieren.
+*/
+
+/*
+position:
+Welche Werte gibt es, was bewirken sie? 
+Erklären Sie kurz Wirkungsweise und Bezugspunkt.
+
+Die "position" Eigenschaft legt die Positionsart eines Elements fest.
+Für die Positionierung selbst werden die Eigenschaften top, right, bottom oder left verwendet.
+Position:   * static
+            > Default-Wert. Das Element befindet sich im normalen "Fluss". Die Eigenschaften top, right, bottom oder left
+              haben keine Auswirkungen.
+            * relative
+            > Relative positionierung in der document order. Das Element wird vom normalen Fluss aus verschoben und hat
+              keinen Einfluss auf andere Elemente, da an der ursprünglichen Position Platz gelassen wird.
+            * fixed
+            > Fixed im Viewport, hierbei handelt es sich auch um eine absolute positionierung. Die Verschiebung orientiert
+              sich am Viewport. Das Element wird aus dem normalen Fluss gelöst und bleibt auch beim Scrollen an seiner fest
+              definierten Position.
+            * absolute
+            > Absolute position im relativen Context, abhänig vom nächste Vorfahren der nicht Static ist. Wenn es keinen gibt,
+              ist es Body. Das Element wird aus dem normalen Fluss gelöst und unabhängig verschoben. Dabei können andere Elemente
+              verdeckt werden. Diese verhalten sich so, als ob das Element nicht vorhanden wäre und lassen keinen Platz für das Element. 
+            * sticky
+            > Eine Mischung zwischen fixed und relative: Das Element wird vom normalen Fluss aus verschoben und hat keinen
+              Einfluss auf andere Elemente, solange es sich innerhalb des Viewports befindet. Sobald es sich ausserhalb befindet,
+              wird das Element aus dem normalen Fluss gelöst und bleibt so beim Scrollen an seiner fest definierten Position.
+            * inherit
+            > Der Wert wird vom Elternelement geerbt.
+*/
+
+/*
+Ergänzen Sie das HTML-Dokument wie folgt:
+Jedes Blumenbild bekommt einen dazugehörigen Text mit dem Namen der Blume.
+Welches Element würden Sie verwenden? Warum? */
+/*
+Hierfür bietet sich das <figcaption>-Element in Verbindung mit dem <figure>-Element als Container an. Das <figcaption>-Element
+wurde explizit für die Verwendung als Untertext bzw. Legende für solche Anwendungsfälle definiert.
+*/
+
+/*
+Verwenden Sie für den Blumennamen das Element <span>.
+Positionieren Sie Bild und Text übereinander,
+der Text befindet sich auf dem Bild am unteren Rand, schließt bündig ab und hat einen halbtransparenten Hintergrund.
+Möglicherweise benötigen Sie weitere Elemente im HTML-Dokument.
+Platzieren Sie jeweils zwei Bilder mit Text nebeneinander, über die größtmögliche Breite.
+*/
+
+div > div {
+    position: relative;
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    vertical-align: bottom; /*Geht nur bei Inline/(Inline-block)-Elementen*/
+}
+
+img + span {
+    position: absolute;
+    width: 100%;
+    background-color: hsla(160, 60%, 55%, 0.5);
+    left: 0;
+    bottom: 0;
+}
+
+/*
+Ist es möglich für alle Bilder die gleich Höhe zu erzwingen?
+*/
+/*
+Ja - Aber schön ist das nicht!
+*/
+
+/*
+Legen Sie jeweils zwei Textabsätze mit Überschrift nebeneinander, in der größtmöglichen Breite.
+Verwenden Sie einmal display, und einmal float.
+Grenzen Sie die Texte durch Hintergrundfarben voneinander ab.
+Wie sieht es hier mit der Höhe aus? */
+/*
+Es ist durchaus möglich den Articeln die gleiche Höhe zu geben, jedoch wird dann der Text abgeschnitten.
+*/
+
+article:nth-child(odd) {
+    width: 50%;
+    float: left;
+    background-color: rgba(0, 100, 0);
+    height: 150px;
+}
+
+article:nth-child(even) {
+    width: 50%;
+    display: inline-block;
+    background-color: rgba(255, 140, 0);
+    height: 150px
+}
+
+
+/*
+Fixieren Sie die Navigation oben.
+Verwenden Sie einmal den Wert fixed und einmal den Wert sticky.
+*/
+nav {
+    /* position: fixed; */
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: rgba(255, 255, 255);
+}
+
+/*
+Schreiben Sie ein media-Query für größere Auflösungen ab 1000px:
+Es passen jetzt drei Bilder nebeneinander.
+*/
+@media (min-width: 1000px) {
+    div > div {
+        width: 33%;
+    }
+}
+
+/*
+Schreiben Sie ein weiteres media-Query für größere Auflösungen ab 1200px:
+Der Body nimmt eine relative Breite von 85% ein und wird nicht größer als 1280px.
+Er ist mittig plaziert.
+Es passen immer noch drei Bilder und zwei Texte nebeneinander.
+*/
+@media (min-width: 1200px) {
+    body {
+        width: 85%;
+        max-width: 1280px;
+        margin: auto;
+    }
+}

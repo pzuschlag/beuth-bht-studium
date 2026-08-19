@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: imapnavigatio
+Bundle-SymbolicName: de.bht.fpa.mail.s826445.imapnavigation;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: de.bht.fpa.mail.s826445.imapnavigation.Activator
+Export-Package: de.bht.fpa.mail.s826445.imapnavigation
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ de.bht.fpa.mail.s000000.common
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Import-Package: de.bht.fpa.mail.s000000.common.mail.model
+Bundle-ActivationPolicy: lazy
