@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
+	<classpathentry kind="src" path="src/"/>
+	<classpathentry exported="true" kind="lib" path="libs/java-mail-1.4.4.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/javax.mail.glassfish-1.4.1.v201005082020.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/org.apache.commons.codec_1.3.0.v201101211617.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/javax.persistence_2.0.3.v201010191057.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/derby.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/eclipselink.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width">
+    <title>aufgabe8</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <h1 id="top">CSS3 layout-modules</h1>
+    <nav>
+        <ul>
+            <li> <a href="#red"> rot </a> </li>
+            <li> <a href="#blue"> blau </a> </li>
+            <li> <a href="#purple"> lila </a> </li>
+            <li> <a href="#pink"> pink </a> </li>
+            <li> <a href="#yellow"> gelb </a> </li>
+            <li> <a href="#colorfull"> bunt </a> </li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Galerie</h2>
+            <div>
+                <img src="img/anemone.jpg" alt="Bild einer Anemone">
+                <img src="img/rose1.jpg" alt="Bild einer Rose">
+                <img src="img/kornblume.jpg" alt="Bild einer Kornblume">
+                <img src="img/anemone.jpg" alt="Bild einer Anemone">
+                <img src="img/cosmee.jpg" alt="Bild einer Cosmee">
+                <img src="img/krokos.jpg" alt="Bild einer Krokos">
+                <img src="img/lilac.jpg" alt="Bild einer Lilac">
+                <img src="img/aster.jpg" alt="Bild einer Aster">
+                <img src="img/gerbera.png" alt="Bild einer Gerbera">
+                <img src="img/rose2.jpg" alt="Bild einer Rose">
+                <img src="img/seeanemone.jpg" alt="Bild einer Seeanemone">
+                <img src="img/colorful.jpg" alt="Bild einer bunten Blume">
+            </div>
+        </section>
+
+        <section>
+            <h2> Alles über Blumenfarben!</h2>
+            <p>Blumengruß<br>
+                Der Strauß, den ich gearticleflücket,<br>
+                Grüße dich vieltausendmal!<br>
+                Ich habe mich oft gebücket,<br>
+                Ach, wohl eintausendmal,<br>
+                Und ihn ans Herz gedrücket<br>
+                Wie hunderttausendmal! <br>
+                <cite>Johann Wolfgang von Goethe (1749 - 1832)</cite>
+            </p>
+
+            <article id="red">
+                <h3>Die Roten</h3>
+                <p>Zu den roten gehören die Mohnblumen und die Rosen.</p>
+                <p>Der Duft der Blumen ist weit süßer in der Luft als in der Hand. Ein Kelch, ein Blatt, ein Dorn An
+                    irgendeinem Sommermorgen –Ein Schälchen Tau – Bienen, ein oder zwei – Ein Windhauch – Rascheln in
+                    den Zweigen – Und ich bin eine Rose! </p>
+                <a href="#top">nach oben</a>
+            </article>
+            
+            <article id="blue">
+                <h3>Die Blauen</h3>
+                <p>Wenn du vergnügt sein willst, umgib dich mit Freunden, wenn du glücklich sein willst, umgib dich mit
+                    Blumen.</p>
+                <a href="#top">nach oben</a>
+            </article>
+
+            <article id="purple">
+                <h3>Die Lilanen </h3>
+                <p> Wohl sind die Königinnen der Blumenwelt die, die auf der Höhe des Frühlings blühen, Maiblumen,
+                    Jasmin und Rose. Aber auch noch am gefrornen Fenster dem schlanken Wuchs der über dem Wasserglase
+                    schwebenden Hyacinthe, dem Krokus, der noch aus dem Schneegefild heraus sein buntes
+                    Glockenköarticlefchen heben muß, zu lauschen, es kann über die Wonnen der Rosenzeit gehen.
+                    Erinnerung, Sehnsucht, Hoffnung sind die Begleiter der ersten Frühlingsboten und Sehnsucht beglückt
+                    oft mehr als Besitz.</p>
+                <a href="#top">nach oben</a>
+            </article>
+
+            <article id="pink">
+                <h3>Die Pinken</h3>
+                <p>Da ist doch irgendwo der Wurm drin: Käme Jesus heute wieder auf die Erde und articleredigte sein
+                    Gleichnis "Sehet die Lilien auf dem Felde ..." – Schmonzens. Keiner würde ihn verstehen. Denn es
+                    gibt ja fast keine Lilien mehr auf dem Felde ...</p>
+                <a href="#top">nach oben</a>
+            </article>
+
+            <article id="yellow">
+                <h3> Die Gelben </h3>
+                <p>Blumen, die wir selten sehen, haben es uns angetan. Wir bewundern Orchideen und verachten Löwenzahn.</p>
+                <a href="#top">nach oben</a>
+            </article>
+
+            <article id="colorful">
+                <h3>Die Bunten</h3>
+                <p>Blumen müssen nicht schön sein. Sie sind es.</p>
+                <a href="#top">nach oben</a>
+            </article>
+
+            <div>
+                <form>
+                    <label for="input_name">Name</label>
+                    <input id="input_name" type="text">
+                    <label for="input_mail">E-Mail</label>
+                    <input id="input_mail" type="text">
+                    <label for="select_colour">Deine Lieblingsfarbe</label>
+                    <select if="select_colour" name="colour">
+                        <option value="" selected disabled hidden>Dropdown</option>
+                        <option value="red">Die Roten</option>
+                        <option value="blue">Die Blauen</option>
+                        <option value="purple">Die Lilanen</option>
+                        <option value="pink">Die Pinken</option>
+                        <option value="yellow">Die Gelben</option>
+                        <option value="colorful">Die Bunten</option>
+                    </select>
+                </form>
+            </div>
+
+        </section>
+    </main>
+</body>
+
+</html>

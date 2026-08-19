@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Rcputils
+Bundle-SymbolicName: de.ralfebert.rcputils
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: de.ralfebert.rcputils.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Import-Package: org.eclipse.core.databinding.conversion,
+ org.eclipse.core.internal.databinding.beans
+Export-Package: de.ralfebert.rcputils.properties,
+ de.ralfebert.rcputils.tables,
+ de.ralfebert.rcputils.tables.format

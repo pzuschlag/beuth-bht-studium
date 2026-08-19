@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: sans-serif;
+}
+
+h1,
+h2 {
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+/* Oberer Bereich */
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    margin: 30px 0 40px 0;
+    border-bottom: 1px solid rgb(0, 100, 0);
+    width: 80%;
+}
+
+li {
+    text-align: center;
+    background-color: rgb(0, 128, 0);
+    border-radius: 0 5px 0 0;
+    width: 100%;
+    margin: 0 5px 0 0;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Mittlerer Bereich */
+main>section>div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+}
+
+img {
+    width: 24%;
+    margin: 0 0 10px 0;
+}
+
+/* Unterer Bereich */
+section:nth-child(2) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 40px;
+}
+
+section:nth-child(2)>h2,
+section:nth-child(2)>h2+p {
+    text-align: center;
+    width: 100%;
+    margin: 0 0 10px 0;
+}
+
+section:nth-child(2) article {
+    width: 49%;
+    margin: 20px 0 0 0;
+}
+
+section:nth-child(2) article h3 {
+    margin: 0 0 10px 0;
+}
+
+section:nth-child(2) article h3+p {
+    margin-bottom: 10px;
+}
+
+/* Media-Query - Mittlere Auflösung */
+@media (max-width: 800px) {
+    img {
+        width: 32%;
+        height: 32%;
+    }
+
+    section:nth-child(2) article {
+        width: 100%;
+    }
+}
+
+/* Media-Query - Mittlere Auflösung */
+@media (max-width: 1024px) {
+    img {
+        width: 32%;
+        height: 32%;
+    }
+
+    section:nth-child(2) article {
+        width: 100%;
+    }
+}
+
+/* Media-Query - kleine Auflösung */
+@media (max-width: 800px) {
+    ul {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 5px 5px 0;
+    }
+
+    li a {
+        padding: 20px;
+        padding-left: 40%;
+        padding-right: 40%;
+    }
+    
+    img {
+        width: 100%;
+    }
+}

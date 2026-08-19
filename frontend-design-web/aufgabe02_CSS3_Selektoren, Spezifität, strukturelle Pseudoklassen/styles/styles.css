@@ -1,0 +1,88 @@
+/* CSS Reset & box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+
+    box-sizing: border-box;
+}
+
+html, body{
+    font-size: 16px;
+}
+
+/* Schriften definieren */
+h1, h2, h3 {
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+}
+    
+h3 {
+    font-size: 1.17em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+/* Styles */
+img {
+    max-width: 30%;
+}
+
+img:nth-child(2),
+img:nth-child(3n+2) {
+    opacity: 0.3;
+}
+
+article:nth-child(even) {
+    text-align: right;
+}
+
+article:nth-child(3n+1) {
+    background-color: lightgray;
+}
+
+article:nth-child(3n+2) {
+    background-color: grey;
+}
+
+article:not(:last-child) {
+    margin: 3px 0px;
+    border-bottom: 1px solid black;
+}
+
+cite {
+    color: grey;
+}
+
+article a {
+    text-align: right;
+    display: block;
+}
+
+article a::after{
+    content: 'nach oben \2191';
+}
+
+@media (max-width: 800px) {
+    img {
+        max-width: 45%;
+    }
+}
