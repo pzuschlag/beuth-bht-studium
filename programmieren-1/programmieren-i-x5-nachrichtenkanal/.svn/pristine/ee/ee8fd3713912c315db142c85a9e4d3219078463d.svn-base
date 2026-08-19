@@ -1,0 +1,15 @@
+import cs101.lang.AnimatorThread;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		TextContainerPrototyp chnl = new TextContainerPrototyp();
+
+		Sender sender = new Sender(chnl);
+		AnimatorThread engine = new AnitmatorThread(sender);
+
+		Recipient recipient = new Empfaenager();
+
+	}
+}

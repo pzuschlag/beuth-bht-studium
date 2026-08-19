@@ -1,0 +1,60 @@
+import nodenet.ChannelDisabledException;
+import nodenet.ChannelEmptyException;
+import nodenet.ChannelFullException;
+import nodenet.InputChannelVector;
+import nodenet.NodeBehavior;
+import nodenet.OutputChannelVector;
+
+public class Zufall implements NodeBehavior {
+
+	private Object o = null;
+
+	/**
+	 * Der Zufallsknoten lieﬂt zuf‰llig aus den Verhanden Kan‰lenen einen aus
+	 * und Schreibt das erhaltene Objekt anschlieﬂend zuf‰llig in einen der
+	 * Vorhandenen Ausgangskan‰le.
+	 */
+	@Override
+	public void transmitPacket(InputChannelVector inputChannels,
+			OutputChannelVector outputChannels) {
+
+		int numInputChannels = inputChannels.size();
+		int numOutputChannels = outputChannels.size();
+
+		// Falls Keine Kan‰le mit dem Knoten verbunden sind
+		if ((numInputChannels == 0) || (numOutputChannels == 0)) {
+			return;
+		}
+
+		int inputNo = 0;
+		int outputNo = 0;
+
+		// Auslesen des InputKanals
+		{
+			// Ermitteln des Zufallskanals
+			for (int i = 1; i < numInputChannels; i++) {
+				inputNo = inputNo + (int) (Math.random() + 0.5);
+			}
+
+			try {
+				this.o = inputChannels.elementAt(inputNo).readObject();
+			} catch (ChannelEmptyException e) {
+			} catch (ChannelDisabledException e) {
+			}
+		}
+
+		// Schreiben auf dem OutputKanal
+		{
+			// Ermitteln des Zufallkanals
+			for (int i = 1; i < numOutputChannels; i++) {
+				outputNo = outputNo + (int) (Math.random() + 0.5);
+			}
+
+			try {
+				outputChannels.elementAt(outputNo).writeObject(o);
+			} catch (ChannelFullException e) {
+			} catch (ChannelDisabledException e) {
+			}
+		}
+	}
+}

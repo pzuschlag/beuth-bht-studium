@@ -1,0 +1,87 @@
+package aufgabe2.c;
+
+import sketchboard.EtchASketch;
+
+public class DrawingInstructor {
+	private static int x = 0, y = 0;
+
+	private static int changeColor = 0;
+
+	private static int changeX = 0;
+	private static int changeY = 0;
+
+	private static int ausfallswinkelX = 1;
+	private static int ausfallswinkelY = 1;
+
+	public static String getTitle() {
+		return "First Drawing: straight line";
+	}
+
+	public static int firstX(int max) {
+		x = 50;
+		return x;
+	}
+
+	public static int firstY(int max) {
+		y = 0;
+		return y;
+	}
+
+	public static int nextX(int max) {
+
+		if (x >= max || x <= (max * -1)) {
+			changeX++;
+			changeColor++;
+			ausfallswinkelX++;
+		}
+
+		if (changeX % 2 == 0) {
+			x = x + ausfallswinkelX;
+		} else {
+			x = x - ausfallswinkelX;
+		}
+
+		if (ausfallswinkelX == 2) {
+			ausfallswinkelX = 1;
+		}
+
+		return x;
+	}
+
+	public static int nextY(int max) {
+
+		if (y >= max || y <= (max * -1)) {
+			changeY++;
+			changeColor++;
+			ausfallswinkelY++;
+		}
+
+		if (changeY % 2 == 0) {
+			y = y + ausfallswinkelY;
+		} else {
+			y = y - ausfallswinkelY;
+		}
+
+		return y;
+	}
+
+	public static int nextColor() {
+
+		switch (changeColor) {
+		case 1:
+			return EtchASketch.BLUE;
+		case 2:
+			return EtchASketch.RED;
+		case 3:
+			return EtchASketch.GREEN;
+		case 4:
+			return EtchASketch.YELLOW;
+		case 5:
+			return EtchASketch.WHITE;
+		case 6:
+			changeColor = 0;
+		default:
+			return EtchASketch.BLACK;
+		}
+	}
+}

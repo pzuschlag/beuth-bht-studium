@@ -1,0 +1,51 @@
+import java.util.EmptyStackException;
+import java.util.Scanner;
+import java.util.Stack;
+
+public class TextContainerStack implements TextContainer {
+
+	// Stack, LIFO-Prinzip (Last in, First out)
+
+	private Stack<String> stack = new Stack<String>();
+
+	@Override
+	public void enter(String s) {
+		stack.push(s);
+	}
+
+	@Override
+	public String remove() throws EmptyException {
+
+		try {
+			return stack.pop();
+		} catch (EmptyStackException e) {
+			throw new EmptyException();
+		}
+	}
+
+	@Override
+	public boolean empty() {
+
+		return stack.empty();
+	}
+
+	public static void main(String[] args) {
+
+		TextContainer chn = new TextContainerStack();
+
+		Scanner scr = new Scanner(System.in);
+		String in;
+
+		for (int i = 0; i < 10; i++) {
+			System.out.print("Eingabe: ");
+			in = scr.next();
+			chn.enter(in);
+		}
+
+		try {
+			System.out.println(chn.remove());
+		} catch (EmptyException e) {
+			e.printStackTrace();
+		}
+	}
+}

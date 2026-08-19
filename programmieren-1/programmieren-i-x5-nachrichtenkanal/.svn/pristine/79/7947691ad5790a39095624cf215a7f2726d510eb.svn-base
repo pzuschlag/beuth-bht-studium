@@ -1,0 +1,13 @@
+public interface TextContainer {
+
+	public default void enter(String s) {
+	}
+
+	public default String remove() throws EmptyException {
+		return null;
+	}
+
+	public default boolean empty() {
+		return false;
+	}
+}

@@ -1,0 +1,64 @@
+import nodenet.ChannelDisabledException;
+import nodenet.ChannelEmptyException;
+import nodenet.ChannelFullException;
+import nodenet.InputChannelVector;
+import nodenet.NodeBehavior;
+import nodenet.OutputChannelVector;
+
+public class Verzoegerung implements NodeBehavior {
+
+	private Object o = null;
+	int inputNo = 0;
+	int outputNo = 0;
+
+	/**
+	 * Der Gerechte Knoten verteilt die einkommenden Objekte gerecht auf die Vorhandenen Ausgangskan�le, pro Tik Werden
+	 * daher Pro Ausgangskanal ein Paket ausgeliefert
+	 * 
+	 * Erweitert Gerecht um Sleep
+	 */
+	@Override
+	public void transmitPacket(InputChannelVector inputChannels, OutputChannelVector outputChannels) {
+
+		int numInputChannels = inputChannels.size();
+		int numOutputChannels = outputChannels.size();
+
+		// Falls Keine Kan�le mit dem Knoten verbunden sind
+		if ((numInputChannels == 0) || (numOutputChannels == 0)) {
+			return;
+		}
+
+		// Auslesen aus dem Kanal
+		{
+			try {
+				this.o = inputChannels.elementAt(inputNo).readObject();
+				inputNo++;
+			} catch (ChannelEmptyException e) {
+			} catch (ChannelDisabledException e) {
+			}
+
+			if (inputNo == numOutputChannels) {
+				inputNo = 0;
+			}
+		}
+
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e1) {
+		}
+
+		// Schreiben in den Output
+		{
+			try {
+				outputChannels.elementAt(outputNo).writeObject(o);
+				outputNo++;
+			} catch (ChannelFullException e) {
+			} catch (ChannelDisabledException e) {
+			}
+
+			if (outputNo == numOutputChannels) {
+				outputNo = 0;
+			}
+		}
+	}
+}
