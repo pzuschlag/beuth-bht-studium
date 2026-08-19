@@ -1,0 +1,56 @@
+\documentclass[a4paper, 10pt]{scrartcl}
+
+\usepackage[utf8]{inputenc}
+
+\usepackage[ngerman]{babel}
+
+\usepackage[T1]{fontenc}
+
+\usepackage[amsmath]{}
+
+\title{Waschmaschine}
+
+\author{Team Waschmaschine}
+
+\date{01.11.2015}
+
+
+\begin{document}
+
+\maketitle
+\title{Dokumentation Übung 01}
+\author{Team Waschmaschine}
+
+\section{Aufgabenstellung}
+\subsection{Teilaufgabe 1}
+
+Es sollen zwei Programme geschrieben werden.\\
+Das erste soll ein Bild von der Festplatte öffnen und in einem (der Größe des Bildes angepassten) Fenster anzeigen. \\
+Das zweite soll pixelweise ein schwarzes Bild mit einer diagonalen roten Linie in der Größe 480 x 640 Pixel zeichnen. Wird die Fenstergröße verändert, soll sich das Bild anpassen. Hierzu ist die Klasse "Writable IMage" zu verwenden.\\
+
+\subsection{Teilaufgabe 2}
+
+Es soll eine matrizen- und Vektoren-Bibliothek geschrieben werden.\\
+Diese soll folgende Klassen umfassen:
+\begin{description}
+\item[-]Mat3x3
+\item[-]Normal3
+\item[-]Point3
+\item[-]Vector3
+\end{description}
+Zum Test dieser Klassen sind weitere Testklassen zu schreiben.
+
+\newpage
+
+\section{Implementierung und auftretende Probleme}
+
+Nachdem wir und über die zu verwendenden Klassen informiert hatten, haben wir zunächst das Program zum öffnen und anzeigen des Bildes von der Festplatte.\\
+Hierzu verwendeten wir die JavaFX-Bibliothek, insbesondere die Klasse FileChooser, welche ein Bild auf der festplatte auswählen lässt und dieses als File wieder gibt. Das so ausgewählte Bild wird in einem ImageViewer angezeigt.\\
+\newline
+Die Implementierung des WritableImage wurde während der Bearbeitung der Übung noch einmal abgeändert. In der ersten Implementierung war vorgesehen, dass bei Veränderung der Größe des WritableImages jedes Mal ein neues Image generiert - und das alte überschrieben wird. Diese Methode wurde in der finalen Version dahingehend abgeändert, dass das WritableImage, so wie in der Klasse vorgesehen kontinuierlich neu beschrieben, bzw. gezeichnet wird.\\
+\newline
+Die Implementierung der Vektor- und Matrizenbibliothek bereitete keine großen Schwierigkeiten. Uns war jedoch nicht klar, ob man Vereinfachungen von bestimmten Methoden - zum Beispiel durch Schleifen - vornehmen sollte.\\
+Für den Test der Bibliotheken haben wir JUnit Tests erstellt.\\
+\newline
+Insgesamt wurden etwa 8 Stunden für die Bearbeitung der Aufgaben aufgewendet.
+\end{document}
