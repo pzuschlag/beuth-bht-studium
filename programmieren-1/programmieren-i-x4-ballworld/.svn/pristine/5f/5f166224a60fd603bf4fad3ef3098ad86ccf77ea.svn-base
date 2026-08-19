@@ -1,0 +1,32 @@
+package aufgabe3;
+
+import aufgabe2.BasicAbstract;
+
+public class Kick extends BasicAbstract {
+
+	public Kick() {
+		setRadius(10);
+		setX((Math.random() - 0.5) * (400 - getRadius()));
+		setY((Math.random() - 0.5) * (400 - getRadius()));
+	}
+
+	@Override
+	public void userClicked(double arg0, double arg1) {
+
+		double pos = (getX() + getY());
+		double clickPos = arg0 + arg1;
+
+		if (clickPos <= (pos + getRadius()) && clickPos >= (pos - getRadius())) {
+			setX(arg0);
+			setY(arg1);
+		}
+	}
+
+	@Override
+	public void userTyped(char arg0) {
+
+		if (arg0 == 'd') {
+			getWorld().removeBall(this);
+		}
+	}
+}

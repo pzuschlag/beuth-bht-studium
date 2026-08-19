@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+import cs101.lang.Animate;
+
+public class Recipient implements Animate {
+
+	Scanner scr = new Scanner(System.in);
+	Textcontainer chnl = new TextcontainerPrototyp();
+
+	public Recipient() {
+		System.out.println("Los gehts !");
+	}
+
+	@Override
+	public void act() {
+
+		String s = scr.next();
+		chnl.enter(s);
+		myTextGUI.write();
+	}
+}

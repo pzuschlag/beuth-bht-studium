@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+import cs101.lang.Animate;
+
+public class Sender implements Animate {
+
+	TextContainer chnl;
+	Scanner scr = new Scanner(System.in);
+
+	public Sender(TextContainer chnl) {
+		this.chnl = chnl;
+		System.out.println("Bitte eine Eingabe tätigen:");
+	}
+
+	@Override
+	public void act() {
+
+		String str = scr.next();
+
+		try {
+			chnl.enter(str);
+		} catch (FullException e) {
+		}
+	}
+}

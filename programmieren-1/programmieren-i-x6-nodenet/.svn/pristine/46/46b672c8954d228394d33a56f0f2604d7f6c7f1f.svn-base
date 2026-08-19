@@ -1,0 +1,19 @@
+import java.util.ArrayList;
+
+import nodenet.InputChannelVector;
+import nodenet.NodeBehavior;
+import nodenet.OutputChannelVector;
+
+public class Gerechtigkeit implements NodeBehavior {
+
+	/**
+	 * BlaBlaBla
+	 */
+	@Override
+	public void transmitPacket(InputChannelVector arg0, OutputChannelVector arg1) {
+		// TODO Auto-generated method stub
+
+		ArrayList<InputChannelVector> inputs = new ArrayList<InputChannelVector>();
+
+	}
+}

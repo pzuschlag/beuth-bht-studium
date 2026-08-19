@@ -1,0 +1,23 @@
+import cs101.lang.AnimatorThread;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		TextContainerPrototype chnl = new TextContainerPrototype();
+
+		Sender sender = new Sender(chnl);
+		AnimatorThread senderEngine = new AnimatorThread(sender);
+		senderEngine.startExecution();
+
+		Receiver receiver = new Receiver(chnl);
+		AnimatorThread receiverEngine = new AnimatorThread(receiver);
+		receiverEngine.startExecution();
+
+		try {
+			receiverEngine.sleep(10000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+}

@@ -1,0 +1,20 @@
+import cs101.lang.AnimatorThread;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		TextContainerPrototype chnl = new TextContainerPrototype(5);
+
+		Sender sender = new Sender(chnl);
+		AnimatorThread senderEngine = new AnimatorThread(sender);
+		senderEngine.startExecution();
+
+		Receiver receiver = new Receiver(chnl);
+		AnimatorThread receiverEngine = new AnimatorThread(receiver);
+		receiverEngine.startExecution();
+
+		receiverEngine.setSleepRange(1000);
+
+	}
+}

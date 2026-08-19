@@ -1,0 +1,59 @@
+package aufgabe2.a;
+
+import sketchboard.EtchASketch;
+
+public class DrawingInstructor {
+	private static int x = 0, y = 0;
+
+	private static int versatz = 10;
+	private static int changeColor = 0;
+
+	public static String getTitle() {
+		return "First Drawing: straight line";
+	}
+
+	public static int firstX(int max) {
+		x = -250;
+		return x;
+	}
+
+	public static int firstY(int max) {
+		y = 250;
+		return y;
+	}
+
+	public static int nextX(int max) {
+
+		if (y == max) {
+			x = firstX(max);
+			changeColor++;
+			return EtchASketch.GAP;
+		}
+
+		return x++;
+	}
+
+	public static int nextY(int max) {
+
+		if (y == max) {
+			y = firstY(max) - versatz;
+			versatz = versatz + 10;
+			return EtchASketch.GAP;
+		}
+
+		return y++;
+	}
+
+	public static int nextColor() {
+
+		if (changeColor % 2 == 0) {
+			return EtchASketch.BLUE;
+		} else {
+			return EtchASketch.RED;
+		}
+
+		// return EtchASketch.BLACK;
+		// return EtchASketch.GREEN;
+		// return EtchASketch.YELLOW;
+	}
+}

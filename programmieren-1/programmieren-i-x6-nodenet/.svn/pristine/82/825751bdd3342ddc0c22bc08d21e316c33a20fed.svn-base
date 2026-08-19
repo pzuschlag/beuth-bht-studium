@@ -1,0 +1,60 @@
+import java.util.ArrayList;
+
+import nodenet.ChannelDisabledException;
+import nodenet.ChannelEmptyException;
+import nodenet.ChannelFullException;
+import nodenet.InputChannelVector;
+import nodenet.NodeBehavior;
+import nodenet.OutputChannelVector;
+
+public class Gerechtigkeit implements NodeBehavior {
+
+	private Object o = null;
+	int OutputNo = 0;
+	private final ArrayList<Object> list = new ArrayList<Object>();
+
+	/**
+	 * Der Gerechte Knoten verteilt die einkommenden Objekte gerecht auf die
+	 * Vorhandenen Ausgangskanäle, pro Tik Werden daher Pro Ausgangskanal ein
+	 * Paket ausgeliefert
+	 */
+	@Override
+	public void transmitPacket(InputChannelVector inputChannels,
+			OutputChannelVector outputChannels) {
+
+		int numInputChannels = inputChannels.size();
+		int numOutputChannels = outputChannels.size();
+
+		// Falls Keine Kanäle mit dem Knoten verbunden sind
+		if ((numInputChannels == 0) || (numOutputChannels == 0)) {
+			return;
+		}
+
+		// Auslesen aus dem Kanal
+		for (int i = 0; i < numInputChannels; i++) {
+			try {
+				this.o = inputChannels.elementAt(i).readObject();
+			} catch (ChannelEmptyException e) {
+				continue;
+			} catch (ChannelDisabledException e) {
+				continue;
+			}
+			list.add(o);
+		}
+
+		while (!list.isEmpty()) {
+			try {
+				outputChannels.elementAt(OutputNo).writeObject(list.remove(0));
+				OutputNo++;
+			} catch (ChannelFullException e) {
+				continue;
+			} catch (ChannelDisabledException e) {
+				continue;
+			}
+
+			if (OutputNo == numOutputChannels) {
+				OutputNo = 0;
+			}
+		}
+	}
+}

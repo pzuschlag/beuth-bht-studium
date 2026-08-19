@@ -1,0 +1,35 @@
+public class TextContainerArray implements TextContainer {
+
+	private String[] list;
+	private int size, count, next, last, aktuell = 0;
+
+	public TextContainerArray() {
+		this(25);
+	}
+
+	public TextContainerArray(int size) {
+		this.size = size;
+		list = new String[size];
+	}
+
+	public void enter(String s) {
+		if (count >= size)
+			throw new FullException();
+		list[next] = s;
+		next = (next + 1) % size;
+		count++;
+	}
+
+	public String remove() throws EmptyException {
+		if (count <= 0)
+			throw new EmptyException();
+		aktuell = last;
+		count--;
+		last = (last + 1) % size;
+		return list[aktuell];
+	}
+
+	public boolean empty() {
+		return count == 0;
+	}
+}

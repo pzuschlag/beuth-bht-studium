@@ -1,0 +1,34 @@
+package aufgabe3;
+
+import aufgabe2.Basic;
+import ballworld.Ball;
+import cs101.lang.Animate;
+
+public class Kick extends Basic implements Ball, Animate {
+
+	private int radius = 50;
+
+	public Kick() {
+		setRadius(radius);
+	}
+
+	@Override
+	public void userClicked(double arg0, double arg1) {
+
+		double pos = (getX() + getY());
+		double clickPos = arg0 + arg1;
+
+		if (clickPos <= (pos + radius) && clickPos >= (pos - radius)) {
+			setX(arg0);
+			setY(arg1);
+		}
+	}
+
+	@Override
+	public void userTyped(char arg0) {
+
+		if (arg0 == 'd') {
+			getWorld().removeBall(this);
+		}
+	}
+}

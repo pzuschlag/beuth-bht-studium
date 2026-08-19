@@ -1,0 +1,67 @@
+package aufgabe2;
+
+import ballworld.Ball;
+import ballworld.World;
+import cs101.lang.Animate;
+
+public class Basic implements Ball, Animate {
+
+	private double r = 5.0;
+	private double x = 0;
+	private double y = 0;
+	private World world;
+
+	public Basic() {
+		setX((Math.random() - 0.5) * 400);
+		setY((Math.random() - 0.5) * 400);
+	}
+
+	@Override
+	public void userClicked(double arg0, double arg1) {
+	}
+
+	@Override
+	public void userTyped(char arg0) {
+	}
+
+	@Override
+	public void act() {
+	}
+
+	@Override
+	public double getRadius() {
+		return r;
+	}
+
+	public void setRadius(double radius) {
+		r = radius;
+	}
+
+	@Override
+	public double getX() {
+		return x;
+	}
+
+	public void setX(double pos) {
+		x = pos;
+	}
+
+	@Override
+	public double getY() {
+		return y;
+	}
+
+	public void setY(double pos) {
+		y = pos;
+	}
+
+	@Override
+	public void setWorld(World arg0) {
+		world = arg0;
+	}
+
+	public World getWorld() {
+		return world;
+	}
+
+}

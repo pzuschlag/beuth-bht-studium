@@ -1,0 +1,52 @@
+package aufgabe0_vorbereitung;
+
+import ballworld.Ball;
+import ballworld.World;
+
+public class Basic implements Ball {
+
+	private int radius = 5;
+	private int x = 0;
+	private int y = 0;
+	private World world;
+
+	public Basic() {
+	}
+
+	public void act() {
+	}
+
+	public void ping() {
+	}
+
+	@Override
+	public double getRadius() {
+		return radius;
+	}
+
+	@Override
+	public double getX() {
+		return x;
+	}
+
+	@Override
+	public double getY() {
+		return y;
+	}
+
+	@Override
+	public void setWorld(World arg0) {
+		world = arg0;
+	}
+
+	@Override
+	public void userClicked(double arg0, double arg1) {
+
+	}
+
+	@Override
+	public void userTyped(char arg0) {
+
+	}
+
+}

@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+import cs101.lang.Animate;
+
+public class Sender implements Animate {
+
+	Scanner scr = new Scanner(System.in);
+	Textcontainer chnl;
+
+	public Sender(Textcontainer chnl) {
+		this.chnl = chnl;
+		System.out.println("Los gehts !");
+	}
+
+	@Override
+	public void act() {
+
+		String s = scr.next();
+		chnl.enter(s);
+	}
+
+}

@@ -1,0 +1,10 @@
+package aufgabe2;
+
+public class Basic extends BasicAbstract {
+
+	public Basic() {
+		setRadius(5.0);
+		setX((Math.random() - 0.5) * (400 - getRadius()));
+		setY((Math.random() - 0.5) * (400 - getRadius()));
+	}
+}
