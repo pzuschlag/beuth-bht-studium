@@ -23,3 +23,9 @@ Aufbauende Java-Übungen: Datenstrukturen, OOP, Design Patterns, GUI (JavaFX).
 | Ordner | Inhalt |
 |--------|--------|
 | [`prog2-adressbuch/`](prog2-adressbuch/) | Adressbuch-Anwendung (Aufgaben VT1/VT2, aus fremdem Repo) |
+
+## Prüfungsvorbereitung
+
+| Ordner | Inhalt |
+|--------|--------|
+| [`probeklausur/`](probeklausur/) | Probeklausur: Geldchip/Portmonai (OOP, Exceptions) + Wählerbefragung |
