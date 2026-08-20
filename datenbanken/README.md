@@ -14,6 +14,9 @@
 | `select.sql` | Weitere SELECT-Statements |
 | `fbi.sql` | FBI-Datensatz (Demo-Daten) |
 | `src/` | Java/JDBC-Zugriffe |
+| `src/info/goolap/beuth/jdbc/` | Erweiterter JDBC-Client mit DAO-Pattern (Person) |
 | `Java/` | Weitere Java-Dateien |
+| `create_test__and_tables.sql` | Test-Tabellen DDL |
+| `values_person.sql` | Person-Testdaten |
 
 Datenbasis: FBI-Kriminalstatistik-Datensatz (öffentliche Daten).

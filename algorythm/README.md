@@ -6,8 +6,14 @@ Java-Algorithmen-Übung. Gruppenarbeit.
 
 ## Inhalt
 
-Implementierungen verschiedener `LongSpeicher`-Varianten (10, 20, 30, 40, 50, 60 Slots)
-sowie reguläre Ausdrücke (`Reg Ausdrücke Find und Remove`).
+| Datei(en) | Thema |
+|-----------|-------|
+| `LongSpeicher*.java` | LongSpeicher-Varianten (10–60 Slots) |
+| `Reg Ausdrücke Find und Remove/` | Reguläre Ausdrücke |
+| `Rekursion0*.java` | Rekursions-Übungen (01–07) |
+| `MaxTeilsumme01.java` | Maximale Teilsumme (Projekt 7) |
+| `Alg_MergeSort01.java`, `Alg_SchrittFunktionenA.java` | MergeSort, Schrittfunktionen |
+| `anz10er_Class.java`, `arraySyso.java`, `aufFuellen.java` | Weitere Algorithmen-Übungen |
 
 - `src/` — Java-Quellcode
 - `bin/` — Kompilierte Klassen
