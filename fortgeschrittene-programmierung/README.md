@@ -1,4 +1,4 @@
-# FPA — Fortgeschrittene Programmierung in der Anwendungsentwicklung
+# Fortgeschrittene Programmierung in der Anwendungsentwicklung — Fortgeschrittene Programmierung in der Anwendungsentwicklung
 
 Eclipse RCP E-Mail-Client aus dem Kurs **FPA**, Beuth Hochschule Berlin. Einzelarbeit.
 

@@ -20,8 +20,8 @@ ist auf dem Stand von 2015–2019. Verstehen vor Kopieren.
 | [`computergrafik-2/`](computergrafik-2/) | Computergrafik 2 | WS 16/17 | Gruppenarbeit |
 | [`verteilte-systeme/`](verteilte-systeme/) | Verteilte Systeme | SS 17 | Gruppenarbeit |
 | [`multimedia-engineering-2/`](multimedia-engineering-2/) | Multimedia Engineering 2 | WS 16/17 | Gruppenarbeit |
-| [`qpm/`](qpm/) | Qualitätsmanagement & Prozessmodellierung | — | Einzelarbeit |
-| [`fpa/`](fpa/) | Fortgeschrittene Programmierung in der Anwendungsentwicklung | — | Einzelarbeit |
+| [`qualitaetsmanagement-prozessmodellierung/`](qualitaetsmanagement-prozessmodellierung/) | Qualitätsmanagement & Prozessmodellierung | — | Einzelarbeit |
+| [`fortgeschrittene-programmierung/`](fortgeschrittene-programmierung/) | Fortgeschrittene Programmierung in der Anwendungsentwicklung | — | Einzelarbeit |
 | [`frontend-design-web/`](frontend-design-web/) | Frontend Design Web | SS 19 | Einzelarbeit |
 | [`software-engineering/`](software-engineering/) | Software Engineering (3 Projekte) | WS 16/17 – SS 17 | Einzel- & Gruppenarbeit |
 
