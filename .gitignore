@@ -1,0 +1,16 @@
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Eclipse / IntelliJ
+.settings/
+.classpath
+.project
+*.iml
+.idea/
+
+# Build artifacts
+bin/
+build/
